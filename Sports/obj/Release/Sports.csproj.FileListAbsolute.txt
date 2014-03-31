@@ -1,0 +1,4 @@
+F:\PSD\Sports\Sports\bin\Sports.dll
+F:\PSD\Sports\Sports\bin\Sports.pdb
+F:\PSD\Sports\Sports\obj\Release\Sports.dll
+F:\PSD\Sports\Sports\obj\Release\Sports.pdb

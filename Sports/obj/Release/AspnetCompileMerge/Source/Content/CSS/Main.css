@@ -1,0 +1,42 @@
+﻿* { margin:0; padding:0; border:0; }
+body { background:#FFFFFF ; font-family:arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif; font-size:14px; line-height:20px; color:#656d78; background-color:#f5f7fa; }
+input { vertical-align:baseline; }
+input::-ms-clear { display:none; }
+input[type="submit"] { padding:1px 6px; }
+.clearfix { *zoom:1 }
+.clearfix:before,
+.clearfix:after { display:table; content:""; line-height:0; }
+.clearfix:after { clear:both; }
+.container{ width:1190px; margin:0 auto; }
+.header .top { position:relative; height:110px; text-align:right; }
+.header .top .logo { position:absolute; top:30px; left:0; height:61px; }
+.header .top .logo a { opacity:1; filter:alpha(opcity = 100); display:block; }
+.header .top .logo a:hover { opacity:.95; filter:alpha(opcity = 95); text-decoration:none; }
+.icon-common { background: url("../Images/icon-common.png") no-repeat; }
+.icon-common-logo { background-position:0 0; width:220px; height:50px; }
+.icon-common-search { background-position:-610px -6px; width:20px; height:20px; }
+.icon-common-searchhover { width:40px; height:44px; background-position:-507px -0px; }
+.icon-common-integration { background-position:-610px -6px; width:20px; height:20px; }
+
+.header .top .right { color:#434a54; font-size:12px; padding-top:33px; }
+.header .top .right .search { float:right; }
+.header .top .right .search .txt { display:block; width:364px; height:32px; text-indent:6px; border:3px solid #dd4250; background-color:#FFF; margin-top:6px; color:#ccd1d9; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; }
+.header .top .right .search .mbtn { position:absolute; right:0px; top:40px; display:block; width:40px; height:38px; cursor:pointer; border:0; background:none; }
+.header .top .right .search .hot { display:block; text-align:left; color:#aab2bd; }
+.header .top .right .search .hot a { color:#aab2bd; margin-right:10px; }
+.header .top .right .search .hot a:hover { color:#333; text-decoration:underline; }
+.header .top .right .search .iconsear { position:absolute; right:10px; top:48px; display:block; cursor:pointer; }
+.header .top .right .search .iconsearbg { position:absolute; right:1px; top:40px; display:inline; cursor:pointer; }
+
+.header .nav { position:relative; height:45px; line-height:45px; color:#FFF; font-size:16px; background:#dd4250; -webkit-border-radius:4px 4px 4px 0; -moz-border-radius:4px 4px 4px 0; border-radius:4px 4px 4px 0; }
+.header .nav strong { float:left; width:229px; border-right:1px solid #dd4250; }
+.header .nav strong.side { display:block; text-indent:20px; color:#FFF; font-weight:400; }
+.header .nav .lnks .lnks-li li { float:left; display:inline-block; }
+.header .nav .lnks .lnks-li li a.lnk { display:block; padding:0 22px; color:#FFF; text-decoration:none; }
+.header .nav .lnks .lnks-li li a:hover.lnk,
+.header .nav .lnks .lnks-li li a.on { background-color:#ed5466; }
+
+.showlist { position:absolute; left:0; width:230px; height:578px; color:#333; line-height:45px; font-size:16px; }
+.showlist b { background-color:#fcf5de; font-weight:normal; }
+.showlist .showlistUI { height:100%; background-color:#fffbea; }
+.showlist .showlistUI li { list-style-type:none; float:left; width:110px; padding-left:5px; }
