@@ -62,6 +62,8 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="Register.html" />
+    <Content Include="VenueDetail.html" />
+    <Content Include="VenueList.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
