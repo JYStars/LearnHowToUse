@@ -58,7 +58,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CSS\Main.css" />
+    <Content Include="Content\Images\banner.jpg" />
+    <Content Include="Content\Images\bg_Body.jpg" />
+    <Content Include="Content\Images\bike.jpg" />
+    <Content Include="Content\Images\five-star.png" />
+    <Content Include="Content\Images\gym-four.jpg" />
+    <Content Include="Content\Images\gym-one.jpg" />
+    <Content Include="Content\Images\gym-three.JPG" />
+    <Content Include="Content\Images\gym-two.jpg" />
+    <Content Include="Content\Images\heishijiao.jpg" />
+    <Content Include="Content\Images\hsj_1.jpg" />
+    <Content Include="Content\Images\hsj_2.jpg" />
+    <Content Include="Content\Images\hsj_3.jpg" />
     <Content Include="Content\Images\icon-common.png" />
+    <Content Include="Content\Images\L_eMail.gif" />
+    <Content Include="Content\Images\L_passWord.gif" />
+    <Content Include="Content\Images\L_phone.gif" />
+    <Content Include="Content\Images\L_userName.gif" />
+    <Content Include="Content\Images\opacity.png" />
+    <Content Include="Content\Images\opacity30.png" />
+    <Content Include="Content\Images\review_1.jpg" />
+    <Content Include="Content\Images\review_2.jpg" />
+    <Content Include="Content\Images\review_3.jpg" />
+    <Content Include="Content\Images\review_4.jpg" />
+    <Content Include="Content\Images\ski.jpg" />
+    <Content Include="Content\Images\slowrun.jpg" />
+    <Content Include="Content\Images\swiming.jpg" />
+    <Content Include="Content\Images\tabletennis.jpg" />
+    <Content Include="Content\Images\tennis.jpg" />
+    <Content Include="Content\Images\treadmill.jpg" />
+    <Content Include="Content\Images\yoga.jpg" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
     <Content Include="FlagDesign\Content\Images\banner.jpg" />
     <Content Include="FlagDesign\Content\Images\bg_Body.jpg" />
