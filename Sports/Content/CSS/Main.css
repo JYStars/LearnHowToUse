@@ -43,6 +43,11 @@ input[type="submit"] { padding:1px 6px; }
 .icon-common-squash { background-position:-600px -51px; width:30px; height:32px; }
 .icon-common-tel { background-position:-575px 0; width:35px; height:32px; }
 .icon-common-face { background-position:-548px 0; width:30px; height:32px; }
+.icon-common-fixture { background-position:0 -90px; width:15px; height:20px; }
+.icon-common-coach { background-position:-15px -90px; width:15px; height:20px; }
+.icon-common-age { background-position:-30px -90px; width:15px; height:20px; }
+.icon-common-level { background-position:-45px -90px; width:15px; height:20px; }
+.icon-common-region { background-position:-60px -90px; width:15px; height:20px; }
 .five-star { background: url("../Images/five-star.png") no-repeat; width:190px; height:16px; }
 .star-0 { background-position:0 -96px; }
 .star-1 { background-position:0 -80px; }
@@ -118,10 +123,27 @@ input[type="submit"] { padding:1px 6px; }
 .rslide-cont .venue-detail .info2 .venue-review { margin:10px; padding:10px 0; border-bottom:1px dashed #dbdbdb; }
 .rslide-cont .venue-detail .info2 .lastone { border-bottom:0; }
 
-.fixTable1 { width:100%; border:0; table-layout:fixed; margin:10px auto; }
-.fixTable1 td { text-align:left; }
+.rslide-cont .coach { margin-top:10px; }
+.rslide-cont .coach .cirdius { margin-bottom:10px; padding-left:15px; background-color:#FFF; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; line-height:40px; display:table; width:935px; }
+
+.fixTable1,.fixTable2 { border:0; table-layout:fixed; margin:10px auto; }
+.fixTable1 td, .fixTable2 td { text-align:left; }
 .fixTable1 .td300 { width:290px; text-align:left; }
 .fixTable1 .td180 { width:200px; padding-left:7px; }
+
+.fixTable2 { margin-left:5px; }
+.fixTable2 .th100 { width:100px; text-align:left; vertical-align:top; }
+.fixTable2 .th100 b { display:block; float:left; margin:9px 8px 0 0; }
+.fixTable2 td a { padding:0 14px; line-height:30px; border-right:1px solid #999; text-decoration:none; color:#666; }
+.fixTable2 td a:last-child { border-right:0; }
+.fixTable2 td a:hover { color:#999;}
+.fixTable2 td a.selected { color:#ed5466; }
+
+.coachList { border:0; table-layout:fixed; margin:10px auto 10px 10px; border-bottom:1px dashed #efefef; }
+.coachList td { text-align:left; padding-bottom:10px; }
+.coachList .aTitle { color:#2a64b4; font-size:16px; text-decoration:none; }
+.coachList .tips { color:#56ce81; }
+.coachList .td100 { width:100px; }
 
 .paging { text-align:center; }
 .paging a { text-decoration:none; min-width:18px; border:1px solid #e6e9ed; padding:7px 10px; font-size:12px; color:#656d78; }

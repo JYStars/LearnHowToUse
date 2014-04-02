@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CoachList.html" />
     <Content Include="Content\CSS\Main.css" />
     <Content Include="Content\Images\banner.jpg" />
     <Content Include="Content\Images\bg_Body.jpg" />
