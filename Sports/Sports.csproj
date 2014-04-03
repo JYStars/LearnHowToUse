@@ -78,6 +78,7 @@
     <Content Include="Content\Images\hsj_1.jpg" />
     <Content Include="Content\Images\hsj_2.jpg" />
     <Content Include="Content\Images\hsj_3.jpg" />
+    <Content Include="Content\Images\icom-common-w30h32.png" />
     <Content Include="Content\Images\icon-common.png" />
     <Content Include="Content\Images\L_eMail.gif" />
     <Content Include="Content\Images\L_passWord.gif" />
@@ -141,7 +142,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Images\PSD.rar" />
+    <Content Include="Content\Images\icon-common.rar" />
     <None Include="Properties\PublishProfiles\Sports.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
