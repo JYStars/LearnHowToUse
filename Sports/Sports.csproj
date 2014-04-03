@@ -57,12 +57,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CoachDetail.html" />
     <Content Include="CoachList.html" />
     <Content Include="Content\CSS\Main.css" />
     <Content Include="Content\Images\banner.jpg" />
     <Content Include="Content\Images\bg_Body.jpg" />
     <Content Include="Content\Images\bike.jpg" />
+    <Content Include="Content\Images\coach-desc-1.jpg" />
+    <Content Include="Content\Images\coach-desc-2.jpg" />
+    <Content Include="Content\Images\coach-desc-3.jpg" />
+    <Content Include="Content\Images\coach-desc-4.jpg" />
+    <Content Include="Content\Images\Copper.png" />
     <Content Include="Content\Images\five-star.png" />
+    <Content Include="Content\Images\Gold.png" />
     <Content Include="Content\Images\gym-four.jpg" />
     <Content Include="Content\Images\gym-one.jpg" />
     <Content Include="Content\Images\gym-three.JPG" />
@@ -82,6 +89,7 @@
     <Content Include="Content\Images\review_2.jpg" />
     <Content Include="Content\Images\review_3.jpg" />
     <Content Include="Content\Images\review_4.jpg" />
+    <Content Include="Content\Images\Silver.png" />
     <Content Include="Content\Images\ski.jpg" />
     <Content Include="Content\Images\slowrun.jpg" />
     <Content Include="Content\Images\swiming.jpg" />

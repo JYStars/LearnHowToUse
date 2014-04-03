@@ -13,3 +13,8 @@ E:\Works\Code\LearnHowToUse\Sports\bin\Sports.pdb
 E:\Works\Code\LearnHowToUse\Sports\obj\Debug\Sports.csprojResolveAssemblyReference.cache
 E:\Works\Code\LearnHowToUse\Sports\obj\Debug\Sports.dll
 E:\Works\Code\LearnHowToUse\Sports\obj\Debug\Sports.pdb
+F:\PSD\HowToUse\LearnHowToUse\Sports\bin\Sports.dll
+F:\PSD\HowToUse\LearnHowToUse\Sports\bin\Sports.pdb
+F:\PSD\HowToUse\LearnHowToUse\Sports\obj\Debug\Sports.csprojResolveAssemblyReference.cache
+F:\PSD\HowToUse\LearnHowToUse\Sports\obj\Debug\Sports.dll
+F:\PSD\HowToUse\LearnHowToUse\Sports\obj\Debug\Sports.pdb

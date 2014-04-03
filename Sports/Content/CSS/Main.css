@@ -20,29 +20,29 @@ input[type="submit"] { padding:1px 6px; }
 .icon-common-logo { background-position:0 0; width:220px; height:50px; }
 .icon-common-search { background-position:-610px -6px; width:20px; height:20px; }
 .icon-common-searchhover { background-position:-507px -0px; width:40px; height:44px; }
-.icon-common-integration { background-position:1px -51px; width:30px; height:32px; }
-.icon-common-badminton { background-position:-30px -51px; width:30px; height:32px; } 
-.icon-common-basketball { background-position:-60px -51px; width:30px; height:32px; } 
-.icon-common-natatorium { background-position:-90px -51px; width:30px; height:32px; } 
-.icon-common-yoga { background-position:-120px -51px; width:30px; height:32px; }
-.icon-common-golf { background-position:-150px -51px; width:30px; height:32px; }
-.icon-common-ski { background-position:-180px -51px; width:30px; height:32px; }
-.icon-common-tabletennis { background-position:-210px -51px; width:30px; height:32px; }
-.icon-common-footerball { background-position:-240px -51px; width:30px; height:32px; }
-.icon-common-bowling { background-position:-270px -51px; width:30px; height:32px; }
-.icon-common-billiards { background-position:-300px -51px; width:30px; height:32px; }
-.icon-common-outdoorsport { background-position:-330px -51px; width:30px; height:32px; }
-.icon-common-dance { background-position:-360px -51px; width:30px; height:32px; }
-.icon-common-outdooractivities { background-position:-390px -51px; width:30px; height:32px; }
-.icon-common-tennis { background-position:-420px -51px; width:30px; height:32px; }
-.icon-common-canoeing { background-position:-450px -51px; width:30px; height:32px; }
-.icon-common-fencing { background-position:-480px -51px; width:30px; height:32px; }
-.icon-common-gofishing { background-position:-510px -51px; width:30px; height:32px; }
-.icon-common-martial { background-position:-540px -51px; width:30px; height:32px; }
-.icon-common-shoot { background-position:-570px -51px; width:30px; height:32px; }
-.icon-common-squash { background-position:-600px -51px; width:30px; height:32px; }
-.icon-common-tel { background-position:-575px 0; width:35px; height:32px; }
-.icon-common-face { background-position:-548px 0; width:30px; height:32px; }
+.icon-common-integration { background-position:1px -51px; width:24px; height:30px; }
+.icon-common-badminton { background-position:-30px -51px; width:24px; height:30px; } 
+.icon-common-basketball { background-position:-60px -51px; width:24px; height:30px; } 
+.icon-common-natatorium { background-position:-90px -51px; width:24px; height:30px; } 
+.icon-common-yoga { background-position:-120px -51px; width:24px; height:30px; }
+.icon-common-golf { background-position:-150px -51px; width:24px; height:30px; }
+.icon-common-ski { background-position:-180px -51px; width:24px; height:30px; }
+.icon-common-tabletennis { background-position:-210px -51px; width:24px; height:30px; }
+.icon-common-footerball { background-position:-240px -51px; width:24px; height:30px; }
+.icon-common-bowling { background-position:-270px -51px; width:24px; height:30px; }
+.icon-common-billiards { background-position:-300px -51px; width:24px; height:30px; }
+.icon-common-outdoorsport { background-position:-330px -51px; width:24px; height:30px; }
+.icon-common-dance { background-position:-360px -51px; width:24px; height:30px; }
+.icon-common-outdooractivities { background-position:-390px -51px; width:24px; height:30px; }
+.icon-common-tennis { background-position:-420px -51px; width:24px; height:30px; }
+.icon-common-canoeing { background-position:-450px -51px; width:24px; height:30px; }
+.icon-common-fencing { background-position:-480px -51px; width:24px; height:30px; }
+.icon-common-gofishing { background-position:-510px -51px; width:24px; height:30px; }
+.icon-common-martial { background-position:-540px -51px; width:24px; height:30px; }
+.icon-common-shoot { background-position:-570px -51px; width:24px; height:30px; }
+.icon-common-squash { background-position:-600px -51px; width:24px; height:30px; }
+.icon-common-tel { background-position:-575px 0; width:35px; height:30px; }
+.icon-common-face { background-position:-548px 0; width:30px; height:30px; }
 .icon-common-fixture { background-position:0 -90px; width:15px; height:20px; }
 .icon-common-coach { background-position:-15px -90px; width:15px; height:20px; }
 .icon-common-age { background-position:-30px -90px; width:15px; height:20px; }
@@ -76,16 +76,16 @@ input[type="submit"] { padding:1px 6px; }
 .header .nav .lnks .lnks-li li a:hover.lnk,
 .header .nav .lnks .lnks-li li a.on { background-color:#ed5466; }
 
-.showlist { width:230px; color:#333; line-height:45px; font-size:16px; background-color:#fffbea; color:#974c19; float:left; }
+.showlist { width:230px; color:#333; line-height:40px; font-size:16px; background-color:#fffbea; color:#974c19; float:left; }
 .showlist .title { background-color:#fcf5de; font-weight:normal; display:block; padding-left:10px; border-bottom:1px solid #f4edd9; border-top:1px solid #f4edd9; margin-top:10px; }
-.showlist .showlistUI { margin:0 0 0 10px; }
-.showlist .showlistUI li { float:left; width:103px; padding:10px 0 6px; line-height:33px; border-bottom:1px dashed #f4edd9; }
+.showlist .showlistUI { margin:0 0 0 5px; }
+.showlist .showlistUI li { float:left; width:98px; padding:8px 0 3px 10px; line-height:30px; border-bottom:1px dashed #f4edd9; }
 .showlist .showlistUI li:last-child { border-bottom:0; }
 .showlist .showlistUI b { display:block; float:left; }
-.showlist .showlistUI li a.tit { display:block; text-indent:5px; text-decoration:none; color:#974c19; }
+.showlist .showlistUI li a.tit { display:block; text-indent:5px; text-decoration:none; color:#974c19; font-size:14px; }
 .showlist .showlistUI li a:hover.tit { text-decoration:none; color:#3b4449; }
 
-.showlist .searchRegion { cursor:pointer; padding:10px 0 6px 20px; line-height:33px; border-bottom:1px dashed #f4edd9; position:relative; }
+.showlist .searchRegion { cursor:pointer; padding:10px 0 6px 20px; line-height:30px; border-bottom:1px dashed #f4edd9; position:relative; font-size:14px; }
 .showlist .searchRegion:hover { background-color:#fcf5de; }
 .showlist .searchRegion .SBRAction { display:none; }
 .showlist .searchRegion:hover .SBRAction { display:block; z-index:4; }
@@ -124,7 +124,7 @@ input[type="submit"] { padding:1px 6px; }
 .rslide-cont .venue-detail .info2 .lastone { border-bottom:0; }
 
 .rslide-cont .coach { margin-top:10px; }
-.rslide-cont .coach .cirdius { margin-bottom:10px; padding-left:15px; background-color:#FFF; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; line-height:40px; display:table; width:935px; }
+.rslide-cont .coach .cirdius { margin-bottom:10px; padding:0 10px 0 5px; background-color:#FFF; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; line-height:40px; display:table; width:935px; }
 
 .fixTable1,.fixTable2 { border:0; table-layout:fixed; margin:10px auto; }
 .fixTable1 td, .fixTable2 td { text-align:left; }
@@ -144,6 +144,22 @@ input[type="submit"] { padding:1px 6px; }
 .coachList .aTitle { color:#2a64b4; font-size:16px; text-decoration:none; }
 .coachList .tips { color:#56ce81; }
 .coachList .td100 { width:100px; }
+
+.coachDetail-title1 { border-bottom:1px solid #efefef; padding:15px 15px 0px; font-size:18px; color:#333; font-weight:bold; }
+.coachDetail-title1 img { vertical-align:baseline; }
+.coachDetail-publish { float:right; color:#999; font-size:12px; font-weight:normal; }
+
+.tbl_coachDetail { margin:10px auto 0; padding:0 0 10px; border:0; border-bottom:1px dashed #efefef; table-layout:fixed; width:96%; }
+.tbl_coachDetail td { text-align:left; padding:3px; }
+.tbl_coachDetail .td80 { width:80px; }
+.pink, .pink a { color:#ED5466; text-decoration:none; }
+
+.coachDetail-desc { border-bottom:1px dashed #efefef; margin:10px auto 0; padding:0px 0 15px; width:96%; }
+.coachDetail-desc b { font-size:14px; display:block; }
+.coachDetail-desc span { line-height:26px; }
+.coachDetail-ImgGroup { text-align:center; }
+.coachDetail-ImgGroup img { padding-right:15px; width:210px; }
+.coachDetail-ImgGroup img:last-child { padding-right:0; }
 
 .paging { text-align:center; }
 .paging a { text-decoration:none; min-width:18px; border:1px solid #e6e9ed; padding:7px 10px; font-size:12px; color:#656d78; }
