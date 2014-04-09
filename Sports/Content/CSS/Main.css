@@ -67,6 +67,9 @@ input[type="submit"] { padding:1px 6px; }
 .header .top .right .search .hot a:hover { color:#333; text-decoration:underline; }
 .header .top .right .search .iconsear { position:absolute; right:10px; top:48px; display:block; cursor:pointer; }
 .header .top .right .search .iconsearbg { position:absolute; right:1px; top:40px; display:inline; cursor:pointer; }
+.header .top .right .topLogon { position:absolute; top:14px; right:310px; }
+.header .top .right .topLogon a { text-decoration:none; color:#434a54; font-size:12px; }
+.header .top .right .topLogon a:hover { color:#F84858; }
 
 .header .nav { position:relative; height:45px; line-height:45px; color:#FFF; font-size:16px; background:#dd4250; -webkit-border-radius:4px 4px 4px 0; -moz-border-radius:4px 4px 4px 0; border-radius:4px 4px 4px 0; }
 .header .nav strong { float:left; width:229px; border-right:1px solid #dd4250; }
