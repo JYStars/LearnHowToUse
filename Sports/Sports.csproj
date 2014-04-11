@@ -63,6 +63,7 @@
     <Content Include="Content\Images\banner.jpg" />
     <Content Include="Content\Images\bg_Body.jpg" />
     <Content Include="Content\Images\bike.jpg" />
+    <Content Include="Content\Images\btnRelease.png" />
     <Content Include="Content\Images\coach-desc-1.jpg" />
     <Content Include="Content\Images\coach-desc-2.jpg" />
     <Content Include="Content\Images\coach-desc-3.jpg" />
@@ -70,6 +71,7 @@
     <Content Include="Content\Images\Copper.png" />
     <Content Include="Content\Images\five-star.png" />
     <Content Include="Content\Images\Gold.png" />
+    <Content Include="Content\Images\gray-star.png" />
     <Content Include="Content\Images\gym-four.jpg" />
     <Content Include="Content\Images\gym-one.jpg" />
     <Content Include="Content\Images\gym-three.JPG" />
@@ -84,8 +86,10 @@
     <Content Include="Content\Images\L_passWord.gif" />
     <Content Include="Content\Images\L_phone.gif" />
     <Content Include="Content\Images\L_userName.gif" />
+    <Content Include="Content\Images\menu.gif" />
     <Content Include="Content\Images\opacity.png" />
     <Content Include="Content\Images\opacity30.png" />
+    <Content Include="Content\Images\red-star.png" />
     <Content Include="Content\Images\review_1.jpg" />
     <Content Include="Content\Images\review_2.jpg" />
     <Content Include="Content\Images\review_3.jpg" />
@@ -134,6 +138,7 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="Register.html" />
+    <Content Include="Script\jquery-1.11.0.min.js" />
     <Content Include="VenueDetail.html" />
     <Content Include="VenueList.html" />
     <Content Include="Web.config" />
@@ -151,9 +156,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Script\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
