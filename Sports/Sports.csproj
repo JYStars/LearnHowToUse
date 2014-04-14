@@ -80,6 +80,8 @@
     <Content Include="Content\Images\hsj_3.jpg" />
     <Content Include="Content\Images\icom-common-w30h32.png" />
     <Content Include="Content\Images\icon-common.png" />
+    <Content Include="Content\Images\Icon_Left.gif" />
+    <Content Include="Content\Images\Icon_Right.gif" />
     <Content Include="Content\Images\L_eMail.gif" />
     <Content Include="Content\Images\L_passWord.gif" />
     <Content Include="Content\Images\L_phone.gif" />
