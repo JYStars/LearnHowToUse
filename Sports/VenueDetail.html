@@ -1,9 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>大连运动健身网官网</title>
     <link charset="utf-8" href="Content/CSS/Main.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        var ShowCommnets = function () {
+            $("#divPopupLayout").fadeIn("normal");
+        };
+        var HideCommnets = function () {
+            $("#divPopupLayout").fadeOut();
+        };
+    </script>
 </head>
 <body>
 <div class="header container">
@@ -212,7 +221,10 @@
                     &nbsp;
                     <input type="button" value="提&nbsp; &nbsp;交" class="txtSubmit" />
                 </div>
-                <div class="venue-title">大众点评</div>
+                <div class="venue-title">
+                    大众点评
+                    <input type="button" class="btnRelease" value="我要评论" onclick="ShowCommnets()" />
+                </div>
                 <div class="venue-info">
                 	<div class="venue-review">
                     	点评2：<div class="evaluation five-star star-5"></div>
@@ -291,6 +303,32 @@
             <p>Copyright© 2014-2024 大连运动健身网 All Rights Reserved </p>
         </div>
         <br />
+    </div>
+</div>
+<div id="divPopupLayout" class="popupLayout" style="display:none;">
+    <div class="mask">
+        &nbsp;
+    </div>
+    <div class="layContent" style="width:500px; height:300px;">
+        <div class="comments-title">
+            我要点评
+            <input type="button" class="btnCloseLayout" value="x" onclick="HideCommnets()" />
+        </div>
+        <div class="comments-content">
+            总体评价：<span class="red">*</span> &nbsp; 
+            <img src="Content/Images/red-star.png" width="15px" alt="" />
+            <img src="Content/Images/red-star.png" width="15px" alt="" />
+            <img src="Content/Images/red-star.png" width="15px" alt="" />
+            <img src="Content/Images/gray-star.png" width="15px" alt="" />
+            <img src="Content/Images/gray-star.png" width="15px" alt="" />
+            <span class="comments-tips">(点击星星为商户打分)</span>
+            <br />
+            <textarea cols="10" rows="5" class="taContent">评价：</textarea>
+            <br />
+            <div class="action">
+                <input type="button" class="submitco" value="立即提交" />
+            </div>
+        </div>
     </div>
 </div>
 </body>
