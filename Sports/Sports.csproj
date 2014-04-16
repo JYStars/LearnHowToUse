@@ -104,6 +104,8 @@
     <Content Include="Content\Images\tabletennis.jpg" />
     <Content Include="Content\Images\tennis.jpg" />
     <Content Include="Content\Images\treadmill.jpg" />
+    <Content Include="Content\Images\triangle-l.gif" />
+    <Content Include="Content\Images\triangle-r.gif" />
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
