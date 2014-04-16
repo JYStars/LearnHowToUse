@@ -60,6 +60,7 @@
     <Content Include="CoachDetail.html" />
     <Content Include="CoachList.html" />
     <Content Include="Content\CSS\Main.css" />
+    <Content Include="Content\CSS\Map.css" />
     <Content Include="Content\Images\banner.jpg" />
     <Content Include="Content\Images\bg_Body.jpg" />
     <Content Include="Content\Images\bike.jpg" />
@@ -103,6 +104,7 @@
     <Content Include="Content\Images\tabletennis.jpg" />
     <Content Include="Content\Images\tennis.jpg" />
     <Content Include="Content\Images\treadmill.jpg" />
+    <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
     <Content Include="FlagDesign\Content\Images\banner.jpg" />
@@ -139,6 +141,7 @@
     <Content Include="FlagDesign\Register.html" />
     <Content Include="Index.html" />
     <Content Include="Login.html" />
+    <Content Include="MapSearch.html" />
     <Content Include="Register.html" />
     <Content Include="Script\jquery-1.11.0.min.js" />
     <Content Include="VenueDetail.html" />
