@@ -36,7 +36,7 @@ body { background:#FFFFFF ; font-family:arial,"Hiragino Sans GB","Microsoft Yahe
 .header .nav .lnks .lnks-li li a:hover.lnk,
 .header .nav .lnks .lnks-li li a.on { background-color:#ed5466; }
 
-.leftMenu { width:230px; color:#333; line-height:35px; font-size:14px; background-color:#fffbea; color:#974c19; float:left; }
+.leftMenu { width:230px; color:#333; line-height:35px; font-size:14px; background-color:#fffbea; color:#974c19; float:left; position:relative; z-index:5; }
 .leftMenu .screen-tab { background-color:#fcf5de; font-weight:normal; display:block; border-bottom:1px solid #f4edd9; border-top:1px solid #f4edd9; margin-top:10px; }
 .leftMenu .nav-li { float:left; width:103px; padding-left:10px; position:relative; cursor:pointer; }
 .leftMenu .nav-li:hover { background-color:#fcf1df; }
@@ -57,6 +57,7 @@ body { background:#FFFFFF ; font-family:arial,"Hiragino Sans GB","Microsoft Yahe
 .leftMenu .screen-detail h6 { font-size:14px; padding:4px 0; }
 .leftMenu .screen-detail .tagname { color:#98572a; }
 
+.mapArea { position:relative; z-index:1; }
 .mapArea .arrow { position:absolute; top:50%; margin-top:-36px; left:230px; border:1px solid #e8e8e8; height:72px; -webkit-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0; background-color:#fff; -webkit-box-shadow:1px 0 3px rgba(0,0,0,0.1); box-shadow:1px 0 3px rgba(0,0,0,0.1); border-left:none; -webkit-transition:background-color .2s linear; -moz-transition:background-color .2s linear; -o-transition:background-color .2s linear; -ms-transition:background-color .2s linear; transition:background-color .2s linear; cursor:pointer; z-index:9 }
 .mapArea .arrow:hover { background-color:#fffbea }
 .mapArea .arrow .icon-l { background:url("../Images/triangle-l.gif") no-repeat 7px 30px; display:block; width:20px; height:40px; }

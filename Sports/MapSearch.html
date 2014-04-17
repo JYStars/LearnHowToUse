@@ -4,6 +4,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>大连运动健身网官网</title>
     <link charset="utf-8" href="Content/CSS/Map.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        var AutoLeftMenu = function () {
+            if ($("#divLeftMenu").css("display") == "block") {
+                $("#divLeftMenu").css("display", "none");
+                $("#divArrow").css("left", "1px").find("i").removeClass("icon-l").addClass("icon-r");
+            }
+            else {
+                $("#divLeftMenu").css("display", "block");
+                $("#divArrow").css("left", "230px").find("i").addClass("icon-l").removeClass("icon-r");
+            }
+        };
+        var ResizeScreen = function () {
+            var height = $(window).height() - 160;
+            var width = $(window).width() - 4;
+            if (height < 300) height = 300;
+            if (width < 650) width = 650;
+            $("#divLeftMenu").css("height", height + "px");
+            $("#divScreenDetail").css("height", height - 50 + "px")
+            $("#divMap").css("height", height + "px");
+            $(".container").css("width", width + "px");
+        };
+        $(document).ready(function () {
+            ResizeScreen();
+            $(window).resize(function () {
+                ResizeScreen();
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="header container">
@@ -47,7 +76,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="leftMenu">
+    <div id="divLeftMenu" class="leftMenu" style="display:block">
         <div class="screen-tab">
             <ul class="clearfix">
                 <li class="nav-li nav-li-r">
@@ -80,7 +109,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="screen-detail" style="height:500px">
+        <ul id="divScreenDetail" class="screen-detail" style="height:500px">
         	<li>
                 <h6>
                     <i class="order">1</i>
@@ -150,6 +179,28 @@
             <li>
                 <h6>
                     <i class="order">1</i>
+                    黑石礁健身会馆身会馆
+                </h6>
+                <div class="scr-remark">
+                    <span class="tagname">评价：</span>
+                    <img width="14px" src="Content/Images/red-star.png" alt="" />
+                    <img width="14px" src="Content/Images/red-star.png" alt="" />
+                    <img width="14px" src="Content/Images/red-star.png" alt="" />
+                    <img width="14px" src="Content/Images/red-star.png" alt="" />
+                    <img width="14px" src="Content/Images/gray-star.png" alt="" />
+                </div>
+                <div class="scr-tag">
+                    <span class="tagname">地址：</span>
+                    <span>大连市黑石礁黑石礁黑石礁</span>
+                </div>
+                <div class="scr-tag">
+                    <span class="tagname">电话：</span>
+                    <span>0411-1234567</span>
+                </div>
+        	</li>
+            <li>
+                <h6>
+                    <i class="order">1</i>
                     黑石礁健身会馆身会馆身
                 </h6>
                 <div class="scr-remark">
@@ -182,7 +233,7 @@
         </ul>
     </div>
     <div class="mapArea">
-        <div class="arrow" onclick="javascript:alert('ok')">
+        <div id="divArrow" class="arrow" onclick="AutoLeftMenu()">
             <i class="icon-l"></i>
         </div>
         <div id="divMap">调用地图API区域</div>
