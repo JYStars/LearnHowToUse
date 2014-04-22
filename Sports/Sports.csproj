@@ -109,8 +109,10 @@
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_Images\dist_left.png" />
     <Content Include="Content\n_Images\logo.png" />
     <Content Include="Content\n_Images\splitIcon.gif" />
+    <Content Include="Content\n_Images\tblVenue_td.png" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
     <Content Include="FlagDesign\Content\Images\banner.jpg" />
     <Content Include="FlagDesign\Content\Images\bg_Body.jpg" />
