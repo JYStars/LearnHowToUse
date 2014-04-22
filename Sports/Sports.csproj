@@ -110,6 +110,8 @@
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
     <Content Include="Content\n_Images\dist_left.png" />
+    <Content Include="Content\n_Images\gym-one.jpg" />
+    <Content Include="Content\n_Images\hsj_1.jpg" />
     <Content Include="Content\n_Images\logo.png" />
     <Content Include="Content\n_Images\splitIcon.gif" />
     <Content Include="Content\n_Images\tblVenue_td.png" />
