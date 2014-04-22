@@ -108,6 +108,9 @@
     <Content Include="Content\Images\triangle-r.gif" />
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
+    <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_Images\logo.png" />
+    <Content Include="Content\n_Images\splitIcon.gif" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
     <Content Include="FlagDesign\Content\Images\banner.jpg" />
     <Content Include="FlagDesign\Content\Images\bg_Body.jpg" />
@@ -144,6 +147,7 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
+    <Content Include="n_Venue.html" />
     <Content Include="Register.html" />
     <Content Include="Script\jquery-1.11.0.min.js" />
     <Content Include="VenueDetail.html" />
