@@ -116,3 +116,9 @@ a:hover.index-backtop { background-position:0 0; }
 .sidenav-area .sidenav-foot { width: 96px; height: 34px; }
 .sidenav-area .sidenav-foot a { display: block; width: 96px; height: 34px; border-top: 1px solid #ddd; background: url("../n_Images/leftmenu.png") 0 -90px no-repeat;}
 .sidenav-area .sidenav-foot a:hover { background: url("../n_Images/leftmenu.png") 0 -125px no-repeat }
+
+.popupLayout { z-index: 10000; position: fixed; width: 100%; height: 100%; left: 0px; top: 0px; }
+.popupLayout .mask { width: 100%; height: 100%; z-index: 2; background-color: #000; position: absolute; filter: alpha(opacity=20); opacity: 0.2; -moz-background-clip:border-box; -moz-background-origin:padding-box; -moz-background-inline-policy:continuous; }
+.popupLayout .layContent { top: 30%; left: 32%; position:relative; z-index:10003; background-color:#FFF; border:#dbdbdb 1px solid; font-weight:bold; font-size:13px; padding:3px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -moz-box-shadow: 0px 1px 1px #666; -webkit-box-shadow: 0px 1px 1px #666; box-shadow: 0px 1px 1px #666;}
+.btnCloseLayout { color:#656d78; float:right; background:none; font-weight:bold; outline:none; margin:10px 10px 0 0; cursor:pointer; }
+.btnCloseLayout:hover { color:#000; }
