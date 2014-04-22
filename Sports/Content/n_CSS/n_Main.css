@@ -122,3 +122,7 @@ a:hover.index-backtop { background-position:0 0; }
 .popupLayout .layContent { top: 30%; left: 32%; position:relative; z-index:10003; background-color:#FFF; border:#dbdbdb 1px solid; font-weight:bold; font-size:13px; padding:3px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -moz-box-shadow: 0px 1px 1px #666; -webkit-box-shadow: 0px 1px 1px #666; box-shadow: 0px 1px 1px #666;}
 .btnCloseLayout { color:#656d78; float:right; background:none; font-weight:bold; outline:none; margin:10px 10px 0 0; cursor:pointer; }
 .btnCloseLayout:hover { color:#000; }
+.comments-title { font-weight:bold; line-height:45px; border-bottom:1px solid #eee; padding-left:15px; font-size:16px; }
+.comments-content { width:400px; margin:10px auto 0; font-weight:normal; line-height:40px; }
+.comments-content .action { margin-top:15px; }
+.comments-content .submitco { background:url("../n_Images/menu.gif") repeat-x top left; width:150px; height:30px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; outline:none; color:#fff; font-weight:bold; cursor:pointer; }
