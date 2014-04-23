@@ -294,12 +294,16 @@
         </div>
         <div class="layContent" style="width:500px; height:300px;">
             <div class="comments-title">
-                <img src="Content/n_Images/logo.png" width="40px" />&nbsp; 登陆运动健身网账号
+                <img src="Content/n_Images/logo.png" width="40px" alt="" />&nbsp; 登陆运动健身网账号
                 <input type="button" class="btnCloseLayout" value="x" onclick="HideCommnets()" />
             </div>
             <div class="comments-content">
-                <input type="text" class="pass-text-input pass-text-input-userName open pass-text-input-hover" placeholder="手机/邮箱/用户名" />
-                <br />
+                <input type="text" class="txtUserName" placeholder="手机/邮箱/用户名" />
+                <input type="password" class="txtPassWord" />
+                <p class="pass-form-item">
+                    <input type="checkbox" id="cbAutoLogin" checked="checked" />
+                    <label for="cbAutoLogin">下次自动登录</label>
+                </p>
                 <div class="action">
                     <input type="button" class="submitco" value="立即提交" />
                 </div>

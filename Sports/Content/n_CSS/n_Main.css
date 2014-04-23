@@ -126,3 +126,25 @@ a:hover.index-backtop { background-position:0 0; }
 .comments-content { width:400px; margin:10px auto 0; font-weight:normal; line-height:40px; }
 .comments-content .action { margin-top:15px; }
 .comments-content .submitco { background:url("../n_Images/menu.gif") repeat-x top left; width:150px; height:30px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; outline:none; color:#fff; font-weight:bold; cursor:pointer; }
+.comments-content input[type='text'],
+.comments-content input[type='password'] { display:block }
+.txtUserName { width:380px; padding-left:30px; background:url("../n_Images/input_icons.png") 0px -62px no-repeat; padding:12px 10px 12px 0; border:1px solid #ddd; text-indent:30px; margin:15px 0 }
+.txtPassWord { width:380px; padding-left:30px; background:url("../n_Images/input_icons.png") 0px -140px no-repeat; padding:12px 10px 12px 0; border:1px solid #ddd; text-indent:30px; }
+.pass-form-item { margin:15px 0; line-height:34px; }
+.pass-form-item input[type='checkbox'] { vertical-align:middle }
+.pass-form-item .pass-fgtpwd { position:absolute; margin-left:200px; }
+
+.login-link { margin-top:7px }
+.login_logo { display:block; margin:15px 0 10px }
+.login-tips { position:absolute; top:30px; margin:0 0 0 120px; border-left:1px solid #999; padding-left:20px; font-size:14px; font-weight:bold; }
+.nav-2 { height:20px; background:url("../n_Images/reg-nav.png") no-repeat center top }
+.login-btn { font-weight:bold; color:#666; height:32px; width:64px; border:none; background:url("../n_Images/reg_icons.png") no-repeat 0 -48px; cursor:pointer; }
+.tblLogin { padding:40px 0; line-height:50px; }
+.tblLogin th { text-align:right; width:80px; padding-right:20px; color:#000; font-size:14px; font-weight:bold; }
+.tblLogin td { text-align:left; }
+.tblLogin input[type='text'],
+.tblLogin input[type='password'] { height:35px; font-size:16px; color:#000; text-indent:10px; width:350px; border:1px solid #e3e3e3; vertical-align:middle; }
+.tblLogin .on { border:1px solid #488ee7!important }
+.tblLogin input[type='checkbox'] { vertical-align:middle; }
+.tblLogin img { vertical-align:middle; }
+.tblLogin .btnLogin { border:0px; background-color:#3f89ec; padding:10px 30px; width:350px; text-align:center; font-size:16px; color:#FFF; cursor:pointer;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; font-weight:bold; }
