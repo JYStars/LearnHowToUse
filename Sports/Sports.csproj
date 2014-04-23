@@ -109,6 +109,7 @@
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_Images\allcate.png" />
     <Content Include="Content\n_Images\arrow_down.png" />
     <Content Include="Content\n_Images\arrow_down_hover.png" />
     <Content Include="Content\n_Images\bg.jpg" />
@@ -135,6 +136,8 @@
     <Content Include="Content\n_Images\menu.gif" />
     <Content Include="Content\n_Images\more_links.png" />
     <Content Include="Content\n_Images\navbg.jpg" />
+    <Content Include="Content\n_Images\nav_arrow.png" />
+    <Content Include="Content\n_Images\nav_hover.jpg" />
     <Content Include="Content\n_Images\reg-nav.png" />
     <Content Include="Content\n_Images\reg_icons.png" />
     <Content Include="Content\n_Images\search_bg.jpg" />
