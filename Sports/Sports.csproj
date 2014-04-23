@@ -109,8 +109,16 @@
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_Images\arrow_down.png" />
+    <Content Include="Content\n_Images\arrow_down_hover.png" />
     <Content Include="Content\n_Images\dist_left.png" />
+    <Content Include="Content\n_Images\goestop.png" />
+    <Content Include="Content\n_Images\gym-one.jpg" />
+    <Content Include="Content\n_Images\hsj_1.jpg" />
+    <Content Include="Content\n_Images\leftmenu.png" />
     <Content Include="Content\n_Images\logo.png" />
+    <Content Include="Content\n_Images\menu.gif" />
+    <Content Include="Content\n_Images\more_links.png" />
     <Content Include="Content\n_Images\splitIcon.gif" />
     <Content Include="Content\n_Images\tblVenue_td.png" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
