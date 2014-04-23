@@ -111,19 +111,33 @@
     <Content Include="Content\n_CSS\n_Main.css" />
     <Content Include="Content\n_Images\arrow_down.png" />
     <Content Include="Content\n_Images\arrow_down_hover.png" />
+    <Content Include="Content\n_Images\bg.jpg" />
     <Content Include="Content\n_Images\control-btn.png" />
     <Content Include="Content\n_Images\dist_left.png" />
     <Content Include="Content\n_Images\goestop.png" />
     <Content Include="Content\n_Images\gym-one.jpg" />
+    <Content Include="Content\n_Images\header.jpg" />
     <Content Include="Content\n_Images\hsj_1.jpg" />
     <Content Include="Content\n_Images\icon-common.png" />
+    <Content Include="Content\n_Images\index_img1.jpg" />
+    <Content Include="Content\n_Images\index_img2.jpg" />
+    <Content Include="Content\n_Images\index_img3.jpg" />
+    <Content Include="Content\n_Images\index_img4.jpg" />
+    <Content Include="Content\n_Images\index_img5.jpg" />
     <Content Include="Content\n_Images\input_icons.png" />
     <Content Include="Content\n_Images\leftmenu.png" />
     <Content Include="Content\n_Images\logo.png" />
+    <Content Include="Content\n_Images\mask1.png" />
+    <Content Include="Content\n_Images\mask2.png" />
+    <Content Include="Content\n_Images\mask3.png" />
+    <Content Include="Content\n_Images\mask4.png" />
+    <Content Include="Content\n_Images\mask5.png" />
     <Content Include="Content\n_Images\menu.gif" />
     <Content Include="Content\n_Images\more_links.png" />
+    <Content Include="Content\n_Images\navbg.jpg" />
     <Content Include="Content\n_Images\reg-nav.png" />
     <Content Include="Content\n_Images\reg_icons.png" />
+    <Content Include="Content\n_Images\search_bg.jpg" />
     <Content Include="Content\n_Images\splitIcon.gif" />
     <Content Include="Content\n_Images\tblVenue_td.png" />
     <Content Include="Content\n_Images\tCode.gif" />
@@ -163,10 +177,13 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
+    <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
     <Content Include="n_Venue.html" />
     <Content Include="Register.html" />
+    <Content Include="Script\common.js" />
     <Content Include="Script\jquery-1.11.0.min.js" />
+    <Content Include="Script\jquery.SuperSlide.2.1.1.js" />
     <Content Include="VenueDetail.html" />
     <Content Include="VenueList.html" />
     <Content Include="Web.config" />
@@ -176,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\icon-common.rar" />
+    <Content Include="Content\n_Images\searchinput.mkm" />
     <None Include="Properties\PublishProfiles\Sports.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
