@@ -143,7 +143,7 @@ a:hover.index-backtop { background-position:0 0; }
 
 .login-link { margin-top:7px }
 .login_logo { display:block; margin:15px 0 10px }
-.login-tips { position:absolute; top:30px; margin:0 0 0 120px; border-left:1px solid #999; padding-left:20px; font-size:14px; font-weight:bold; }
+.login-tips { position:absolute; top:40px; margin:0 0 0 160px; border-left:1px solid #999; padding-left:30px; font-size:16px; font-weight:bold; }
 .nav-2 { height:20px; background:url("../n_Images/reg-nav.png") no-repeat center top }
 .login-btn { font-weight:bold; color:#666; height:32px; width:64px; border:none; background:url("../n_Images/reg_icons.png") no-repeat 0 -48px; cursor:pointer; }
 .tblLogin { padding:40px 0; line-height:50px; }
