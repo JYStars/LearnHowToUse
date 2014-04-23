@@ -111,6 +111,7 @@
     <Content Include="Content\n_CSS\n_Main.css" />
     <Content Include="Content\n_Images\arrow_down.png" />
     <Content Include="Content\n_Images\arrow_down_hover.png" />
+    <Content Include="Content\n_Images\control-btn.png" />
     <Content Include="Content\n_Images\dist_left.png" />
     <Content Include="Content\n_Images\goestop.png" />
     <Content Include="Content\n_Images\gym-one.jpg" />
