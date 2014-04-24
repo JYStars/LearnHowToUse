@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>地图页</title>
+    <link type="text/css" rel="stylesheet" href="Content/n_CSS/n_Main.css" />
+    <script type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Script/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="Script/common.js"></script>
+</head>
+<body>
+    <!--header start-->
+    <div class="i_header" style="position: fixed; left: 0px; top: 0; z-index: 1000;">
+        <div class="i_nav">
+            <div class="i_nav_r">
+                <a href="">[注册]</a><i></i><a href="">[登录]</a>
+            </div>
+            <div class="i_nav_l" id="nav">
+                <ul>
+                    <li class="dp">
+                        <a href="">场馆<em></em></a><i></i>
+                        <div class="sub">
+                            <a href="">综合</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                        </div>
+                    </li>
+                    <li class="dp">
+                        <a href="">教练<em></em></a><i></i>
+                        <div class="sub">
+                            <a href="">综合</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                        </div>
+                    </li>
+                    <li class="dp">
+                        <a href="">体育协会<em></em></a><i></i>
+                        <div class="sub">
+                            <a href="">综合</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                            <a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a><a href="">羽毛球</a><a href="">篮球</a><a href="">足球</a><a href="">乒乓球</a>
+                        </div>
+                    </li>
+                    <li><a href="">活动比赛</a><i></i></li>
+                    <li><a href="">健身地图</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <!--main start-->
+    <div class="map_wrap">
+        <div class="map_aside">
+            <div class="map_left">
+                <div class="map_tab" id="map_nav">
+                    <ul>
+                        <li class="nav_li">
+                            <a href="javascript:;">健身设施<i></i></a>
+                            <!--二级菜单 start-->
+                            <ul class="lay-screen">
+                                <li>
+                                    <a href="" class="has-child">中山区</a>
+                                    <ul class="lay-screen sublevel">
+                                        <li><a href="">桃源街</a></li>
+                                        <li><a href="">清源街</a></li>
+                                        <li><a href="">清源街</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="has-child">西岗区</a>
+                                    <ul class="lay-screen sublevel">
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">2街</a></li>
+                                        <li><a href="">2源街</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="has-child">沙河口区</a></li>
+                                <li><a href="" class="has-child">甘井子区</a></li>
+                            </ul>
+                            <!--二级菜单 end-->
+                        </li>
+                        <li class="nav_li"><a href="javascript:;">全部地区<i></i></a></li>
+                    </ul>
+                </div>
+                <div class="map_blank">搜索结果：211个</div>
+                <div class="result_list">
+                    <dl>
+                        <dt><i>1</i>华乐广场健身器</dt>
+                        <dd>
+                            <label>地址：</label>华乐广场东侧</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>2</i>林海街健身步道</dt>
+                        <dd>
+                            <label>地址：</label>林海路（近棒棰岛）</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>1</i>华乐广场健身器</dt>
+                        <dd>
+                            <label>地址：</label>华乐广场东侧</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>2</i>林海街健身步道</dt>
+                        <dd>
+                            <label>地址：</label>林海路（近棒棰岛）</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>1</i>华乐广场健身器</dt>
+                        <dd>
+                            <label>地址：</label>华乐广场东侧</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>2</i>林海街健身步道</dt>
+                        <dd>
+                            <label>地址：</label>林海路（近棒棰岛）</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>1</i>华乐广场健身器</dt>
+                        <dd>
+                            <label>地址：</label>华乐广场东侧</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><i>2</i>林海街健身步道</dt>
+                        <dd>
+                            <label>地址：</label>林海路（近棒棰岛）</dd>
+                        <dd>
+                            <label>标签：</label><span class="mr10">健身器材</span><span class="mr10">中山区</span></dd>
+                    </dl>
+                </div>
+            </div>
+            <!--折叠按钮 start-->
+            <div class="packup"><a href="javascript:;"></a></div>
+            <!--折叠按钮 end-->
+        </div>
+        <!--main right start-->
+        <div class="map_right" id="map-container">
+            <!--search start-->
+            <div class="gps_box">
+                <input type="text" value="搜索商户名、菜名、地址等" />
+                <input type="submit" class="btn" value="搜索" />
+            </div>
+            <!--search end-->
+            <img src="Content/n_Images/map1.jpg" style="height: 100%; width: 100%" />
+        </div>
+        <!--main right end-->
+    </div>
+    <!--main end-->
+</body>
+</html>

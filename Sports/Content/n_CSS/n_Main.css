@@ -183,9 +183,39 @@ a:hover.index-backtop { background-position:0 0; }
 .tblLogin th { text-align:right; width:80px; padding-right:20px; color:#000; font-size:14px; font-weight:bold; }
 .tblLogin td { text-align:left; }
 .tblLogin input[type='text'],
-.tblLogin input[type='password'] { height:35px; font-size:16px; color:#000; text-indent:10px; width:350px; border:1px solid #e3e3e3; vertical-align:middle; }
+.tblLogin input[type='password'] { height:35px; font-size:16px; color:#000; padding-left:10px; width:350px; border:1px solid #e3e3e3; vertical-align:middle; }
 .tblLogin .on { border:1px solid #488ee7!important }
 .tblLogin input[type='checkbox'] { vertical-align:middle; }
 .tblLogin img { vertical-align:middle; }
 .tblLogin .btnLogin { border:0px; background-color:#3f89ec; padding:10px 30px; width:350px; text-align:center; font-size:16px; color:#FFF; cursor:pointer;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; font-weight:bold; }
 
+.map_wrap { width:100%; padding-top:43px; margin-bottom:0px; overflow:hidden;}
+.map_aside { width:auto; height:auto; float:left;  position:relative; z-index:10000;}
+.map_left { width:298px; height:auto; border-left:1px solid #ccc; float:left; border-right:1px solid #ccc; background:#FFF; background:url("../n_Images/map_left_top.jpg") no-repeat center 0 #f8f8f8; padding-top:40px;}
+.map_tab { width:298px; height:33px; background:url("../n_Images/map_icon.png") repeat-x; position:relative; border-top:1px solid #ccc;}
+.map_tab .nav_li { float:left; width:149px; height:33px; background:url("../n_Images/map_icon.png") no-repeat; background-position:20px -66px; position:relative;}
+.map_tab .nav_li a { color:#333; padding:7px 45px 0 25px; height:26px; display:block; position:relative;}
+.map_tab .nav_li a:hover { background-color:#e8e8e8;}
+.map_tab .nav_li i { width:7px; height:4px; display:block; background:url("../n_Images/map_icon.png") no-repeat; background-position:-123px -43px; position:absolute; top:15px; right:27px;}
+.map_blank { height:33px; line-height:33px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; color:#666; padding-left:30px; background:#f8f8f8;}
+.packup { height:72px; border:1px solid #e8e8e8; position:absolute; top:50%; margin-top:-36px; border-left:none; right:-15px; background-color:#FFF; cursor:pointer; box-shadow:1px 0 3px rgba(0,0,0,0.1); z-index:10000;}
+.packup a { width:15px; height:15px; margin:28px 0; display:block; background:url("../n_Images/map_icon.png") no-repeat -80px -52px;  cursor:pointer;}
+.packup.packed a { background-position:-70px -52px; }
+.packup a:hover { background-color:#f8f8f8;}
+.map_tab .lay-screen { display:none; border:1px solid #c9c9c9; background-color:#f7f5f2; width:149px; position:absolute; top:33px; left:-1px; box-shadow:rgba(0,0,0,0.1) 2px 2px 2px; z-index:10;}
+.map_tab .lay-screen li { position:relative; zoom:1; z-index:10;}
+.map_tab .lay-screen li a.has-child { background-image:url("../n_Images/map_icon.png"); background-position:245px -97px;}
+.map_tab .sublevel { position:absolute; z-index:20; left:149px; top:0px; display:none; }
+.result_list { overflow-y:auto; overflow-x:hidden;}
+.result_list dl { width:241px; height:auto; padding:17px 15px 17px 42px; overflow:hidden; border-bottom:1px dotted #b63b19;}
+.result_list dl:hover { background-color:#fff9f1;}
+.result_list dt { height:24px; line-height:24px; font-size:14px; font-weight:bold; color:#c9570c; position:relative;}
+.result_list dt i { width:18px; height:18px; border-radius:2px; font-style:normal; background:#b43512; display:block; color:#FFF; text-align:center; line-height:18PX; position:absolute; left:-24PX; top:3PX;}
+.result_list dd { line-height:20px; color:#333; }
+.result_list dd label { color:#9e9e9e; }
+.map_right { overflow:hidden; position:relative; }
+.gps_box { position:absolute; left:75px; top:20px; }
+.gps_box input[type=text] { width:285px; height:17px; line-height:17px; padding:6px 7px; border:1px solid #c9c9c9;  background:url("../n_Images/map_icon.png") no-repeat 5px -138px #fff; float:left; border-radius:2px; box-shadow:1px 1px 1px rgba(0,0,0,0.1); border:none; color:#999; padding-left:30px;}
+.gps_box .btn { width:54px; border-radius:3px; line-height:27px; color:#FFF; font-size:14px; font-weight:bold; float:left; margin-left:5PX; background:#ff7e28; border:1px solid #ff7617; cursor:pointer; }
+.gps_box .btn:hover { background:#f06708; }
+.mr10{margin-right:10px;}
