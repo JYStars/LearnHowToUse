@@ -128,6 +128,9 @@
     <Content Include="Content\n_Images\input_icons.png" />
     <Content Include="Content\n_Images\leftmenu.png" />
     <Content Include="Content\n_Images\logo.png" />
+    <Content Include="Content\n_Images\map1.jpg" />
+    <Content Include="Content\n_Images\map_icon.png" />
+    <Content Include="Content\n_Images\map_left_top.jpg" />
     <Content Include="Content\n_Images\mask1.png" />
     <Content Include="Content\n_Images\mask2.png" />
     <Content Include="Content\n_Images\mask3.png" />
@@ -182,6 +185,7 @@
     <Content Include="MapSearch.html" />
     <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
+    <Content Include="n_MapSearch.html" />
     <Content Include="n_Venue.html" />
     <Content Include="Register.html" />
     <Content Include="Script\common.js" />
