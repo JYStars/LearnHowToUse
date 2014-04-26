@@ -58,9 +58,5 @@ $(function () {
             ts.addClass('packed');
             ts.prev(".map_left").stop().css({ "border": 0, "overflow": "hidden" }).animate({ "width": 0 });
         }
-        //$(this).toggleClass("packed");
-        //$(".map_left").stop().css({"border":"none","overflow":"hidden"}).animate({"width":0});
-        //$(".map_left").stop().css({ width:0, border:"none", overflow:'hidden';});
-
     })
 })

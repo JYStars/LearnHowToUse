@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Script/plugSlider/flexslider.css" rel="stylesheet" />
+    <link href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
+    <script src="Script/jquery-1.11.0.min.js"></script>
+    <script src="Script/plugSlider/jquery.flexslider-min.js"></script>
+    <script src="Script/plugSlider/modernizr.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            });
+        });
+    </script>
+</head>
+<body style="background-color: #f4f4f4">
+    <div class="header-wrap">
+        <div class="header div-980 clearfix">
+            <div class="logo float-left">
+                <a href="#">
+                    <img src="Content/n_Images/logo.png" width="133" height="43" alt="" title="" /></a>
+            </div>
+            <div class="search float-right">
+                <input type="text" class="input-search" value="" maxlength="256" /><input type="button" class="btn-search" value="搜 索" />
+            </div>
+        </div>
+    </div>
+    <div class="nav-area">
+        <div class="nav-container">
+            <div class="navbar clearfix">
+                <a href="#" class="current">首页</a>
+                <a href="#">场馆</a>
+                <a href="#">教练</a>
+                <a href="#">活动&赛事</a>
+                <a href="#">健身地图</a>
+            </div>
+            <div class="login-wrap">
+                <ul>
+                    <li><a href="#" onclick="ShowCommnets()">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="div-980 detail-content clearfix">
+        <div class="detail-main clearfix">
+            <div class="main-box clearfix">
+                <h1>【三八广场】金领健身三八广场店</h1>
+                <p class="site-title">综合健身馆 跑步机 自行车 瑜伽等项目一应俱全</p>
+                <div class="book-show clearfix">
+                    <div class="book-box">
+                        <div class="book-info">
+                            <div class="clearfix">
+                                <span class="book-component-container">场馆地址：</span>
+                                <span class="book-component-inline-text-container">大连市三八广场</span>
+                            </div>
+                            <div class="clearfix">
+                                <span class="book-component-container">联系方式：</span>
+                                <span class="book-component-inline-text-container">0411-1234567</span>
+                            </div>
+                            <div class="clearfix">
+                                <span class="book-component-container">停车位：</span>
+                                <span class="book-component-inline-text-container">免费停车</span>
+                            </div>
+                        </div>
+                        <div class="book-now"><a href="#" class="normal">立即预订</a></div>
+                    </div>
+                    <div class="pro-img">
+                        <img src="Content/n_Images/JinL1.jpg" class="ps" width="447px" height="280px">
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="main-box resetmain-box clearfix">
+                <div class="detail-content-img flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="Content/n_Images/sym1.jpg" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/sym2.jpg" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/sym3.jpg" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/sym4.jpg" class="ps" />
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <p class="detail-title">
+                    <b class="title">点评</b>
+                </p>
+                <div class="page-comment">
+                    <div class="modify-alt clearfix">
+                        <b class="float-left">我要评分：</b>
+                        <ul class="ui_big_ratings">
+                            <li id="1" lang="不推荐，不考虑" class="on"></li>
+                            <li id="2" lang="凑合，别无选择可考虑" class="on"></li>
+                            <li id="3" lang="不错，值得考虑" class="on"></li>
+                            <li id="4" lang="很棒，推荐大家去" class="on"></li>
+                            <li id="5" lang="最佳，绝对首选"></li>
+                        </ul>
+                        <sub class="comment-points float-left">4.0</sub>
+                        <span class="comment-desc">很棒，推荐大家去</span>
+                    </div>
+                    <div class="ui-comment-textArea">
+                        <textarea name="replycontent" lang="default"></textarea>
+                    </div>
+                    <div class="page-modify-dialog">
+                        <span class="iserm" id="faceTags" lang="default">表情<em class="dmore"></em></span>
+                        <span class="ispic" lang="default" onclick="gewa.util.dialogSingleUpdate(this,'','replycontent')">图片</span>
+                        <em class="float-right">
+                            <a href="#" class="btnpublish">发&nbsp;布</a>
+                        </em>
+                    </div>
+                    <ul class="dl-common-original">
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>： 太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>： 
+                                (<span title="10.0分" class="ui_grades ui_grade10">10.0</span>)
+                                太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>： 太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>：
+                                (<span title="5.0分" class="ui_grades ui_grade8">8.0</span>)
+                                太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>：
+                                (<span title="5.0分" class="ui_grades ui_grade8">8.0</span>)
+                                太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>：太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>：
+                                (<span title="5.0分" class="ui_grades ui_grade8">8.0</span>)
+                                太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">快乐的享受</a>：太贵了，楼下是工厂有油漆味 								
+                            </p>
+                            <div class="page-reply clearfix">
+                                <div class="float-left">4小时前 来自手机短信</div>
+                                <div class="float-right">
+                                    <a href="#" class="page-icon useful">0</a>
+                                    <a href="#" class="page-icon comment">0</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="detail-sidebar">
+            <div id="divMap" class="slideMap"><img src="Content/n_Images/ven_map.png" width="238px" /></div>
+            <br />
+            <div><img src="Content/n_Images/ad.png" width="240px" /></div>
+            <br />
+            <div><img src="Content/n_Images/ad.png" width="240px" /></div>
+            <br />
+            <div><img src="Content/n_Images/ad.png" width="240px" /></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-sep"></div>
+        <div class="foot">
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#">关于我们</a></dd>
+                <dd><a href="#">版权声明</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">第一运动</a></dd>
+                <dd><a href="#">第二运动</a></dd>
+            </dl>
+            <dl>
+                <dt>合作伙伴</dt>
+                <dd><a href="#">软降合作</a></dd>
+                <dd><a href="#">战略合作</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="#">公司电话</a></dd>
+                <dd><a href="#">公司地址</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot_b">
+        <div class="foot_b_main">
+            <span class="right">本站所发布的所有内容，未经许可，不得转载</span>
+            <span class="left">© Copyright 2011-2014 Rights Reserved</span>
+        </div>
+    </div>
+</body>
+</html>
