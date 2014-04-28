@@ -113,6 +113,7 @@
     <Content Include="Content\n_Images\allcate.png" />
     <Content Include="Content\n_Images\arrow_down.png" />
     <Content Include="Content\n_Images\arrow_down_hover.png" />
+    <Content Include="Content\n_Images\arrow_up_down.gif" />
     <Content Include="Content\n_Images\bg.jpg" />
     <Content Include="Content\n_Images\btnBook.png" />
     <Content Include="Content\n_Images\comment.gif" />
