@@ -5,9 +5,9 @@
     <title></title>
     <link href="Script/plugSlider/flexslider.css" rel="stylesheet" />
     <link href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
-    <script src="Script/jquery-1.11.0.min.js"></script>
-    <script src="Script/plugSlider/jquery.flexslider-min.js"></script>
-    <script src="Script/plugSlider/modernizr.js"></script>
+    <script type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/modernizr.js"></script>
     <script type="text/javascript">
         $(function () {
             $(window).load(function () {
@@ -16,6 +16,27 @@
                 });
             });
         });
+        var ShowBookDetail = function () {
+            if ($("#div-book-detail").css("display") == "none") {
+                $("#div-book-detail").fadeIn("slow");
+                $(".arrow_down").addClass("arrow_up").removeClass("arrow_down");
+            }
+            else {
+                $("#div-book-detail").fadeOut("normal");
+                $(".arrow_up").addClass("arrow_down").removeClass("arrow_up");
+            }
+        };
+        var MakeItOn = function (lang) {
+            for (var i = 1; i <= lang * 1; i++) {
+                $("#liHover" + i).addClass("on");
+            }
+            for (var j = 5; j > lang; j--) {
+                $("#liHover" + j).removeClass("on");
+            }
+        };
+        var FuckOff = function () {
+            $(".ui_big_ratings").find("li").removeClass("on");
+        };
     </script>
 </head>
 <body style="background-color: #f4f4f4">
@@ -57,7 +78,7 @@
                         <div class="book-info">
                             <div class="clearfix">
                                 <span class="book-component-container">场馆地址：</span>
-                                <span class="book-component-inline-text-container">大连市三八广场</span>
+                                <span class="book-component-inline-text-container">大连市三八广场大连市三八广场大连市三八广</span>
                             </div>
                             <div class="clearfix">
                                 <span class="book-component-container">联系方式：</span>
@@ -69,9 +90,40 @@
                             </div>
                         </div>
                         <div class="book-now"><a href="#" class="normal">立即预订</a></div>
+                        <div class="clearfix">
+                            <a href="javascript:void(0)" class="book-component-link" onclick="ShowBookDetail()">查看更多场馆信息</a>&nbsp; <span class="arrow_down">&nbsp; &nbsp; </span>
+                        </div>
                     </div>
                     <div class="pro-img">
-                        <img src="Content/n_Images/JinL1.jpg" class="ps" width="447px" height="280px">
+                        <img src="Content/n_Images/JinL1.jpg" class="ps" width="400px" height="276px" alt="" />
+                    </div>
+                    <div id="div-book-detail" class="book-contain-detail clearfix" style="display:none">
+                        <h2>金领健身三八广场店：</h2>
+                        <p>金领健身俱乐部是与英国第一健身集团合作组建的纯正欧式化俱乐部. 自2003年建立以来,历经九年发展成为拥有六家俱乐部的连锁机构,是目前大连最大规模的健身连锁机构.</p>
+                        <p>金领健身俱乐部的诞生,使大连的健身行业一跃进入国际先进行列. 金领健身倡导“科学健身,金领第一”的宗旨,把健康和快乐送给在大连居住和生活的时尚人士.</p>
+                        <h2>价格表</h2>
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>项目</td>
+                                <td>时间</td>
+                                <td>价格</td>
+                            </tr>
+                            <tr>
+                                <td>动感单车</td>
+                                <td>每周三、五15:00至17:00</td>
+                                <td>220元/课</td>
+                            </tr>
+                            <tr>
+                                <td>篮球</td>
+                                <td>每天9:00至20:00</td>
+                                <td>50元/课</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -101,11 +153,11 @@
                     <div class="modify-alt clearfix">
                         <b class="float-left">我要评分：</b>
                         <ul class="ui_big_ratings">
-                            <li id="1" lang="不推荐，不考虑" class="on"></li>
-                            <li id="2" lang="凑合，别无选择可考虑" class="on"></li>
-                            <li id="3" lang="不错，值得考虑" class="on"></li>
-                            <li id="4" lang="很棒，推荐大家去" class="on"></li>
-                            <li id="5" lang="最佳，绝对首选"></li>
+                            <li id="liHover1" onmouseover="MakeItOn('1')" onmouseout="FuckOff()" lang="不推荐，不考虑"></li>
+                            <li id="liHover2" onmouseover="MakeItOn('2')" onmouseout="FuckOff()" lang="凑合，别无选择可考虑"></li>
+                            <li id="liHover3" onmouseover="MakeItOn('3')" onmouseout="FuckOff()" lang="不错，值得考虑"></li>
+                            <li id="liHover4" onmouseover="MakeItOn('4')" onmouseout="FuckOff()" lang="很棒，推荐大家去"></li>
+                            <li id="liHover5" onmouseover="MakeItOn('5')" onmouseout="FuckOff()" lang="最佳，绝对首选"></li>
                         </ul>
                         <sub class="comment-points float-left">4.0</sub>
                         <span class="comment-desc">很棒，推荐大家去</span>

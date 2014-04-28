@@ -57,7 +57,7 @@ a:hover { text-decoration: underline; }
 .filter .dist-left .dist-wrap { float:left; height:40px; white-space:nowrap; line-height:40px; }
 .filter .dist-left .dist-title-wrap { font-size:14px; font-weight:bold; font-family:'\5fae\8f6f\96c5\9ed1'; margin:0 10px 0 20px }
 .filter .dist-left .hotdist-wrap { font-weight:normal; margin-right:14px; vertical-align:middle; }
-.filter .dist-left .hotdist-wrap a { padding:2px 6px; line-height:14px; }
+.filter .dist-left .hotdist-wrap a { padding:2px 6px; }
 .filter .dist-left .hotdist-wrap a:hover { background-color: #33a3aa; text-decoration:underline; border-radius:2px; text-decoration:none; color:#fff; }
 
 .scroll-area { width:980px; height:245px; border:1px #e5e5e5 solid; background-color:#fff; margin:20px auto 0; box-shadow:0 2px 0 #eee; -webkit-box-shadow:0 2px 0 #eee; -moz-box-shadow:0 2px 0 #eee}
@@ -98,6 +98,8 @@ a:hover { text-decoration: underline; }
 .more-link-wrap .more-link .arrow-tip{ display:inline-block; width:9px; height:6px; margin-left:10px; background:url("../n_Images/arrow_down.png") no-repeat }
 .more-link-wrap .more-link:hover { text-decoration:none; text-shadow:0 1px 0 #fff; color:#333; background-position:0 -48px; }
 .more-link-wrap .more-link:hover .arrow-tip { background:url("../n_Images/arrow_down_hover.png") no-repeat }
+.arrow_down { width:7px; height:20px; background:url("../n_Images/arrow_up_down.gif") 0 5px no-repeat }
+.arrow_up { width:7px; height:20px; background:url("../n_Images/arrow_up_down.gif") 0 -25px no-repeat }
 
 .i_body { background:url("../n_Images/bg.jpg") no-repeat center 0 #dcdcdc; } 
 .i_header{ width:100%; height:43px; background:url(../n_Images/navbg.jpg) repeat-x; position:relative;}
@@ -138,12 +140,20 @@ a:hover { text-decoration: underline; }
 
 .main-box .site-title { font-size:18px; color:#999; line-height:30px; margin:10px; word-break:break-all }
 .book-show { margin-top:20px; font-family:'arial'; width:700px; _width:720px }
-.book-show .book-box { float:left; background:#fff; width:240px; margin-right:10px; margin-left:0; position:relative; height:260px; line-height:35px; color:#666; }
+.book-show .book-box { float:left; background:#fff; width:287px; margin-right:10px; margin-left:0; position:relative; min-height:260px; line-height:35px; color:#666; }
 .book-box .book-info {  border:1px solid #e5e5e5; border-width:1px 0; padding:10px 0 20px 15px }
 .book-show { font-size:14px } 
-.book-show .book-component-container { width:70px; display:inline-block; float:left; color:#999 }
-.book-show .book-component-inline-text-container { float:left; display:inline-block; color:#299499 }
-.book-show .pro-img { float:left; width:447px; height:280px; overflow:hidden }
+.book-show .book-component-container { width:70px; display:block; position:absolute; color:#999 }
+.book-show .book-component-inline-text-container { display:block; color:#299499; float:left; padding-left:70px }
+.book-show .book-component-link { color:#999; padding-left:15px; margin-top:10px }
+.book-show .book-component-link:hover { color:#46b0ba; }
+.book-show .pro-img { float:left; width:400px; height:276px; overflow:hidden; margin-bottom:5px }
+.book-show .book-contain-detail { font:12px/1.8 Helvetica, \5b8b\4f53, Arial, sans-serif !important; color:#999; margin:0 auto; border:1px solid #e5e5e5; padding:7px } 
+.book-show .book-contain-detail h2 { font-size:14px; line-height:30px }
+.book-show .book-contain-detail p { text-indent:24px; }
+.book-show .book-contain-detail table { border:1px solid #f4f4f4; border-width:0 0 1px 1px }
+.book-show .book-contain-detail table td { border:1px solid #f4f4f4; border-width:1px 1px 0 0; text-align:center; padding:2px 6px }
+.book-now { margin-bottom:10px }
 .book-now a.normal { background: no-repeat; display:block; width:150px; height:40px; margin:15px auto 0; background:url("../n_Images/btnBook.png") top left no-repeat;  -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; color:#fff; font-size:18px; font-weight:bold; text-decoration:none; line-height:40px; text-align:center; text-shadow:1px 1px 0 #333 }
 .book-now a.normal:hover { background-position:0 -47px; }
 
