@@ -204,6 +204,25 @@ sub{ font-size:22px; font-size:28px\9; font-style:italic; color:#f60; line-heigh
 
 .detail-sidebar { width:240px; float:right }
 .detail-sidebar .slideMap { border:1px solid #e5e5e5 }
+.detail-sidebar .cz_topTen { border:1px solid #e5e5e5; padding:10px 15px; background-color:#fff; }
+.detail-sidebar .cz_topTen h2 { font-size:16px; font-weight:bold; padding-bottom:5px; }
+.detail-sidebar .cz_topTen .cz_list { line-height:26px; border-bottom:1px dashed #efefef; color:#333; }
+.detail-sidebar .cz_topTen .sm_Red { padding:0 4px; background-color:#F56D57; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; color:#fff; }
+.detail-sidebar .cz_topTen .sm_Gre { padding:0 4px; background-color:#4AD0B8; -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; color:#fff; }
+.detail-sidebar .cz_topTen .cz_topTen_title { color:#666; font-size:14px; line-height:26px; }
+.detail-sidebar .cz_topTen .cz_topTen_searchArea { background-color:#46b0ba; padding:3px; }
+.detail-sidebar .cz_topTen .ddlSearchBySports { background-color:#fff; padding:2px; width:160px; border:0; }
+.detail-sidebar .cz_topTen .txtSearchBySports { text-align:center; color:#fff; width:45px; border:0; background:none; }
+.detail-sidebar .cz_topTen .btnSignUp { background-color:#f56d57; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; padding:2px 6px; color:#fff; float:right; }
+.detail-sidebar .cz_topTen .cz_monthSc { overflow:hidden; width:220px; position:relative; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_monthSc_L { padding:5px 10px; background-color:#999; color:#fff; position:absolute; left:0; top:0; text-decoration:none; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_monthSc_R { padding:5px 10px; background-color:#999; color:#fff; position:absolute; right:0; top:0; text-decoration:none; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_month_menu { overflow:hidden; display:block; width:168px; height:26px; margin:0 auto; background-color:#46b0ba; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_month_menu li { width:41px; padding:5px 0; text-align:center; color:#fff; float:left; display:none; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_month_menu li:hover { background-color:#33a3aa; cursor:pointer; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_month_menu li.onSel { display:block; }
+.detail-sidebar .cz_topTen .cz_monthSc .cz_month_menu li.on { background-color:#fff; color:#000; border-top:2px solid #46b0ba; }
+.detail-sidebar .cz_topTen .cz_monthCo { overflow:hidden; width:220px; padding-top:5px; }
 
 .footer { width:100%; margin-top:45px; }
 .footer-sep { border-bottom:1px solid #fff; border-top:1px solid #e5e5e5 }
@@ -295,3 +314,16 @@ a:hover.index-backtop { background-position:0 0; }
 .gps_box .btn { width:54px; border-radius:3px; line-height:27px; color:#FFF; font-size:14px; font-weight:bold; float:left; margin-left:5PX; background:#ff7e28; border:1px solid #ff7617; cursor:pointer; }
 .gps_box .btn:hover { background:#f06708; }
 .mr10{margin-right:10px;}
+
+.contest-zone { background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:10px; position:relative; border:1px solid #e5e5e5 }
+.contest-zone h1 { font-size:16px; color:#333; line-height:14px; word-break:break-all; font-weight:bold; margin-top:5px; }
+.contest-zone .cz_banner { width:690px; height:300px; overflow:hidden; }
+.contest-zone .cz_imnews { width:240px; margin-right:10px; }
+.contest-zone .cz_foNews { width:445px; overflow:hidden; }
+
+.contest-zone a.cz_foNews_title { color:#255fb1; font-size:14px; text-decoration:none; letter-spacing:1px; display:block; padding-bottom:5px; }
+.contest-zone a.cz_foNews_normal { color:#333; text-decoration:none; letter-spacing:1px; line-height:20px }
+.contest-zone a:hover.cz_foNews_normal { color:#666; }
+.contest-zone .cz_foNewsCol { border-bottom:1px dashed #ddd; padding:0 0 5px; margin:0 0 15px; }
+.contest-zone .cz_czNewsCol { border-bottom:1px dashed #ddd; padding:0 0 5px; margin:10px 0 15px; }
+.contest-zone .cz_noNewsCol { padding:0 0 5px; margin:10px 0 15px; }

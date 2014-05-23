@@ -117,6 +117,7 @@
     <Content Include="Content\n_Images\bg.jpg" />
     <Content Include="Content\n_Images\btnBook.png" />
     <Content Include="Content\n_Images\comment.gif" />
+    <Content Include="Content\n_Images\contestzone_ba.jpg" />
     <Content Include="Content\n_Images\control-btn.png" />
     <Content Include="Content\n_Images\dist_left.png" />
     <Content Include="Content\n_Images\goestop.png" />
@@ -195,6 +196,7 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
+    <Content Include="n_ContestsZone.html" />
     <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
     <Content Include="n_MapSearch.html" />
