@@ -16,33 +16,35 @@
                 });
             });
             $("#cz_month_menu li").hover(function () {
-                $("#cz_month_menu").find("li").each(function () { $(this).removeClass("on") });
-                $(this).addClass("on");
+                $("#cz_month_menu").find("li").each(function () { $(this).css("background-color", "#cee7fe").css("border-top", "0") });
+                $(this).css("background-color", "#fff").css("border-top", "2px solid #ff52ce");
                 $("#cz_monthCo").find("ul").each(function () { $(this).css("display", "none") });
-                $("#month" + $(this).prop("id")).css("display", "");
+                $("#month_" + $(this).prop("id")).css("display", "");
             });
         });
         var CtrMonth = function (type) {
             var flag = 0;
+            var orig = true;
             $("#cz_month_menu").find("li").each(function () {
-                if (flag == 0 && $(this).prop("class") == "onSel")
-                {
-                    flag = $(this).prop("id") * 1;
+                if (flag == 0 && $(this).prop("class") == "onSel") {
+                    flag = $(this).prop("id");
+                    if ((type == "L" && flag == "cz_li_1") || (type == "R" && flag == "cz_li_9"))
+                        orig = false;
                     if (type == "L")
-                        flag = flag < 2 ? 1 : flag - 4;
+                        flag = flag == "cz_li_5" ? 1 : 5;
                     else
-                        flag = flag > 8 ? 9 : flag + 4;
+                        flag = flag == "cz_li_5" ? 9 : 5;
                 }
-                $(this).removeClass("onSel");
             });
-            //$("#cz_month_menu").find("li").each(function () { $(this).removeClass("on") });
-            //$("#" + flag).addClass("on");
-            //$("#cz_monthCo").find("ul").each(function () { $(this).css("display", "none") });
-            //$("#month" + flag).css("display", "");
-            $("#" + (flag)).addClass("onSel");
-            $("#" + (flag + 1)).addClass("onSel");
-            $("#" + (flag + 2)).addClass("onSel");
-            $("#" + (flag + 3)).addClass("onSel");
+            if (orig) {
+                $("#cz_month_menu").find("li").each(function () {
+                    $(this).removeClass("onSel");
+                });
+                $("#cz_li_" + (flag)).addClass("onSel");
+                $("#cz_li_" + (flag + 1)).addClass("onSel");
+                $("#cz_li_" + (flag + 2)).addClass("onSel");
+                $("#cz_li_" + (flag + 3)).addClass("onSel");
+            }
         };
     </script>
 </head>
@@ -54,7 +56,7 @@
                     <img src="Content/n_Images/logo.png" width="133" height="43" alt="" title="" /></a>
             </div>
             <div class="search float-right">
-                &nbsp;
+                <input type="text" class="input-search" value="" maxlength="256" /><input type="button" class="btn-search" value="搜 索" />
             </div>
         </div>
     </div>
@@ -76,29 +78,46 @@
         </div>
     </div>
     <div class="div-980 detail-content clearfix">
-        <div class="detail-main clearfix">
-            <div class="contest-zone">
+        <div class="contest-zone clearfix">
+            <div class="float-left">
                 <h1>热点赛事</h1>
                 <br />
                 <div class="cz_banner flexslider" style="margin:0;">
                     <ul class="slides">
                         <li>
-                            <img src="Content/n_Images/sym2.jpg" style="width:697px;" class="ps" />
+                            <img src="Content/n_Images/sym2.jpg" style="width:707px;" class="ps" />
                         </li>
                         <li>
-                            <img src="Content/n_Images/sym1.jpg" style="width:697px;" class="ps" />
+                            <img src="Content/n_Images/sym1.jpg" style="width:707px;" class="ps" />
                         </li>
                         <li>
-                            <img src="Content/n_Images/sym3.jpg" style="width:697px;" class="ps" />
+                            <img src="Content/n_Images/sym3.jpg" style="width:707px;" class="ps" />
                         </li>
                         <li>
-                            <img src="Content/n_Images/sym4.jpg" style="width:697px;" class="ps" />
+                            <img src="Content/n_Images/sym4.jpg" style="width:707px;" class="ps" />
                         </li>
                     </ul>
                 </div>
             </div>
-            <br />
-            <div class="contest-zone resetmain-box clearfix">
+            <div class="cz_topHit float-right">
+                <h2>热点排名</h2>
+                <ul class="cz_list">
+                    <li><span class="sm_Red">01</span>&nbsp; <a href="#">高清:奥运会闭幕仪的视频节目...</a></li>
+                    <li><span class="sm_Red">02</span>&nbsp; <a href="#">高清:实在不知道写了什么了了...</a></li>
+                    <li><span class="sm_Red">03</span>&nbsp; <a href="#">高清:南北篮球赛即球员好吧啊...</a></li>
+                    <li><span class="sm_Gre">04</span>&nbsp; <a href="#">高清:奥运会闭幕仪的视频节目...</a></li>
+                    <li><span class="sm_Gre">05</span>&nbsp; <a href="#">高清:什么了了什么么了了什么...</a></li>
+                    <li><span class="sm_Gre">06</span>&nbsp; <a href="#">高清:奥运会闭幕仪的视频节目...</a></li>
+                    <li><span class="sm_Gre">07</span>&nbsp; <a href="#">高清:实在不知道写在不知道写...</a></li>
+                    <li><span class="sm_Gre">08</span>&nbsp; <a href="#">高清:奥运会闭幕仪的视频节目...</a></li>
+                    <li><span class="sm_Gre">09</span>&nbsp; <a href="#">高清:实在不知道写了什么了了...</a></li>
+                    <li><span class="sm_Gre">10</span>&nbsp; <a href="#">高清:奥运会闭幕仪闭幕的节目...</a></li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <div class="detail-main clearfix">
+            <div class="contest-news clearfix">
                 <div class="cz_imnews float-left">
                     <h1>图片新闻</h1>
                     <br />
@@ -177,208 +196,198 @@
         </div>
         <div class="detail-sidebar">
             <div class="cz_topTen">
-                <h2>热点排名</h2>
-                <ul class="cz_list">
-                    <li><span class="sm_Red">01</span>&nbsp; 高清:奥运会闭幕仪的视频节目...</li>
-                    <li><span class="sm_Red">02</span>&nbsp; 高清:实在不知道写了什么了了...</li>
-                    <li><span class="sm_Red">03</span>&nbsp; 高清:南北篮球赛即球员好吧啊...</li>
-                    <li><span class="sm_Gre">04</span>&nbsp; 高清:奥运会闭幕仪的视频节目...</li>
-                    <li><span class="sm_Gre">05</span>&nbsp; 高清:什么了了什么么了了什么...</li>
-                    <li><span class="sm_Gre">06</span>&nbsp; 高清:奥运会闭幕仪的视频节目...</li>
-                    <li><span class="sm_Gre">07</span>&nbsp; 高清:实在不知道写在不知道写...</li>
-                    <li><span class="sm_Gre">08</span>&nbsp; 高清:奥运会闭幕仪的视频节目...</li>
-                    <li><span class="sm_Gre">09</span>&nbsp; 高清:实在不知道写了什么了了...</li>
-                    <li><span class="sm_Gre">10</span>&nbsp; 高清:奥运会闭幕仪闭幕的节目...</li>
-                </ul>
-            </div>
-            <br />
-            <div class="cz_topTen" style="padding:10px">
-                <span class="cz_topTen_title">按运动类查找</span>
-                <div class="cz_topTen_searchArea">
-                    <select class="ddlSearchBySports">
-                        <option>-- 按运动分类查询 --</option>
-                        <option>综合馆</option>
-                        <option>羽毛球</option>
-                    </select>
-                    <input type="button" value="搜 索" class="txtSearchBySports" />
+                <div class="cz_searchArea">
+                    <div style="border-bottom:1px solid #bcd5ec; padding-bottom:10px;">
+                        <span class="cz_topTen_title">按运动类查找</span>
+                        <div class="cz_topTen_searchArea">
+                            <select class="ddlSearchBySports">
+                                <option>-- 按运动分类查询 --</option>
+                                <option>综合馆</option>
+                                <option>羽毛球</option>
+                            </select>
+                            <input type="button" value="搜 索" class="txtSearchBySports" />
+                        </div>
+                    </div>
+                    <div style="border-top:1px solid #fff;">
+                        <span class="cz_topTen_title">按行政区查找</span>
+                        <br />
+                        <a href="#">乒乓球</a>&nbsp;|&nbsp; <a href="#">羽毛球</a>&nbsp;|&nbsp; <a href="#">跳水</a>&nbsp;|&nbsp; <a href="#">篮球</a>&nbsp;|&nbsp; <a href="#">田径</a>
+                        <div class="cz_topTen_searchArea">
+                            <select class="ddlSearchBySports">
+                                <option>-- 按所在区域查找 --</option>
+                                <option>三八广场</option>
+                                <option>五一广场</option>
+                            </select>
+                            <input type="button" value="搜 索" class="txtSearchBySports" />
+                        </div>
+                    </div>
                 </div>
-                <br />
-                <span class="cz_topTen_title">按行政区查找</span>
-                <div class="cz_topTen_searchArea">
-                    <select class="ddlSearchBySports">
-                        <option>-- 按所在区域查找 --</option>
-                        <option>三八广场</option>
-                        <option>五一广场</option>
-                    </select>
-                    <input type="button" value="搜 索" class="txtSearchBySports" />
-                </div>
-            </div>
-            <br />
-            <div class="cz_topTen" style="padding:10px">
-                <h2>活动&赛事日历</h2>
-                <div class="cz_monthSc">
-                    <a href="javascript:void(0)" class="cz_monthSc_L" onclick="CtrMonth('L')">&lt;</a>
-                    <a href="javascript:void(0)" class="cz_monthSc_R" onclick="CtrMonth('R')">&gt;</a>
-                    <ul id="cz_month_menu" class="cz_month_menu clearfix">
-                        <li id="1" class="onSel on">1</li>
-                        <li id="2" class="onSel">2</li>
-                        <li id="3" class="onSel">3</li>
-                        <li id="4" class="onSel">4</li>
-                        <li id="5">5</li>
-                        <li id="6">6</li>
-                        <li id="7">7</li>
-                        <li id="8">8</li>
-                        <li id="9">9</li>
-                        <li id="10">10</li>
-                        <li id="11">11</li>
-                        <li id="12">12</li>
-                    </ul>
-                </div>
-                <div id="cz_monthCo" class="cz_monthCo">
-                    <ul class="cz_list" id="month1">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛1球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季1马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.15 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季1马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季1马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month2" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛2球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季2马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /> </li>
-                        <li>2014.01.18 &nbsp; 冬季2马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季2马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month3" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛3球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季3马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季3马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                    </ul>
-                    <ul class="cz_list" id="month4" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛4球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季4马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季4马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.19 &nbsp; 冬季4马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month5" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛5球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季5马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.18 &nbsp; 冬季5马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季5马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month6" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛6球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季6马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季6马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季6马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month7" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛7球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季7马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.15 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季7马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季7马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month8" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛8球比赛 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.18 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季8马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季8马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month9" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季9马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.17 &nbsp; 羽毛9球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季9马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季9马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month10" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛10球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季10马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季10马拉松 </li>
-                    </ul>
-                    <ul class="cz_list" id="month11" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛11球比赛 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.18 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.16 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季11马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季11马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                    </ul>
-                    <ul class="cz_list" id="month12" style="display:none">
-                        <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.17 &nbsp; 羽毛12球比赛 </li>
-                        <li>2014.01.18 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.15 &nbsp; 冬季12马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
-                        <li>2014.01.16 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.17 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.18 &nbsp; 冬季12马拉松 </li>
-                        <li>2014.01.19 &nbsp; 冬季12马拉松 </li>
-                    </ul>
+                <div class="cz_celinder">
+                    <h2>活动&赛事日历</h2>
+                    <div class="cz_monthSc">
+                        <a href="javascript:void(0)" class="cz_monthSc_L" onclick="CtrMonth('L')">&lt;</a>
+                        <a href="javascript:void(0)" class="cz_monthSc_R" onclick="CtrMonth('R')">&gt;</a>
+                        <ul id="cz_month_menu" class="cz_month_menu clearfix">
+                            <li id="cz_li_1" class="onSel" style="border-top:2px solid #ff52ce; background-color:#fff">1月</li>
+                            <li id="cz_li_2" class="onSel">2月</li>
+                            <li id="cz_li_3" class="onSel">3月</li>
+                            <li id="cz_li_4" class="onSel">4月</li>
+                            <li id="cz_li_5">5月</li>
+                            <li id="cz_li_6">6月</li>
+                            <li id="cz_li_7">7月</li>
+                            <li id="cz_li_8">8月</li>
+                            <li id="cz_li_9">9月</li>
+                            <li id="cz_li_10">10月</li>
+                            <li id="cz_li_11">11月</li>
+                            <li id="cz_li_12">12月</li>
+                        </ul>
+                    </div>
+                    <div id="cz_monthCo" class="cz_monthCo">
+                        <ul class="cz_Monthlist" id="month_cz_li_1">
+                            <li>2014.01.15 &nbsp; 冬季马拉松冬季马拉松冬季马拉松冬季马拉松冬季马拉松冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛1球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季1马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.15 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季1马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季1马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_2" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛2球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季2马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /> </li>
+                            <li>2014.01.18 &nbsp; 冬季2马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季2马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_3" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛3球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季3马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季3马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_4" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛4球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季4马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季4马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.19 &nbsp; 冬季4马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_5" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛5球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季5马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.18 &nbsp; 冬季5马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季5马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_6" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛6球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季6马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季6马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季6马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_7" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛7球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季7马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.15 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季7马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季7马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_8" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛8球比赛 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.18 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季8马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季8马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_9" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季9马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.17 &nbsp; 羽毛9球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季9马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季9马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_10" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛10球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季10马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季10马拉松 </li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_11" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛11球比赛 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.18 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.16 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季11马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季11马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                        </ul>
+                        <ul class="cz_Monthlist" id="month_cz_li_12" style="display:none">
+                            <li>2014.01.15 &nbsp; 冬季马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.17 &nbsp; 羽毛12球比赛 </li>
+                            <li>2014.01.18 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.15 &nbsp; 冬季12马拉松 &nbsp; <input type="button" class="btnSignUp" value="报名" /></li>
+                            <li>2014.01.16 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.17 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.18 &nbsp; 冬季12马拉松 </li>
+                            <li>2014.01.19 &nbsp; 冬季12马拉松 </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
