@@ -221,7 +221,8 @@ sub{ font-size:22px; font-size:28px\9; font-style:italic; color:#f60; line-heigh
 .cz_topTen .cz_topTen_title { color:#888; font-size:14px; line-height:26px; font-size:12px; }
 .cz_topTen .cz_topTen_searchArea { background-color:#b8d5ef; padding:4px; }
 .cz_topTen .ddlSearchBySports { background-color:#fff; padding:2px; width:160px; border:0; color:#898989; }
-.cz_topTen .txtSearchBySports { text-align:center; padding:3px 11px; border:0; background:none; background-color:#d6eafd; color:#3975b3; font-size:12px; }
+.cz_topTen .txtSearchBySports { text-align:center; padding:3px 9px; border:0; background:none; background-color:#d6eafd; color:#3975b3; font-size:12px; cursor:pointer; border:1px solid #A0C1E1; }
+.cz_topTen .txtSearchBySports:hover { background-color:#deeefe; }
 
 .cz_celinder { padding:10px 0; }
 .cz_celinder .cz_monthSc { overflow:hidden; width:240px; position:relative; }
@@ -342,6 +343,8 @@ a:hover.index-backtop { background-position:0 0; }
 .contest-news a.cz_foNews_title { color:#255fb1; font-size:14px; text-decoration:none; letter-spacing:1px; display:block; padding-bottom:5px; }
 .contest-news a.cz_foNews_normal { color:#333; text-decoration:none; letter-spacing:1px; line-height:20px }
 .contest-news a:hover.cz_foNews_normal { color:#666; }
+.contest-news a.cz_foNews_more { display:block; float:right; color:#ccc; padding-top:2px; }
+.contest-news a:hover.cz_foNews_more { color:#D12B01; cursor:pointer; }
 .contest-news .cz_foNewsCol { border-bottom:1px dashed #ddd; padding:0 0 5px; margin:0 0 15px; }
 .contest-news .cz_czNewsCol { border-bottom:1px dashed #ddd; padding:0 0 5px; margin:10px 0 15px; }
 .contest-news .cz_noNewsCol { padding:0 0 5px; margin:10px 0 15px; }
