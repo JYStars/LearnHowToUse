@@ -109,6 +109,15 @@
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_Images\aa_bangqiu.jpg" />
+    <Content Include="Content\n_Images\aa_diaoyu.jpg" />
+    <Content Include="Content\n_Images\aa_huabing.png" />
+    <Content Include="Content\n_Images\aa_pp.jpg" />
+    <Content Include="Content\n_Images\aa_shuaijiao.jpg" />
+    <Content Include="Content\n_Images\aa_taiqiu.jpg" />
+    <Content Include="Content\n_Images\aa_weiqi.jpg" />
+    <Content Include="Content\n_Images\aa_wudao.jpg" />
+    <Content Include="Content\n_Images\aa_wushu.jpg" />
     <Content Include="Content\n_Images\ad.png" />
     <Content Include="Content\n_Images\allcate.png" />
     <Content Include="Content\n_Images\arrow_down.png" />
@@ -196,6 +205,7 @@
     <Content Include="Index.html" />
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
+    <Content Include="n_AA.html" />
     <Content Include="n_ContestsZone.html" />
     <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
