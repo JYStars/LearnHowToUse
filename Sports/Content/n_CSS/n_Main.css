@@ -370,9 +370,9 @@ a:hover.index-backtop { background-position:0 0; }
 .aa-list .aa-column9 img { width:182px; padding:4px 0 0 4px; }
 .aa-list .aa_img_box { background-color:#fff; margin-bottom:10px; box-shadow:0 2px 2px #d4d7d7; -webkit-box-shadow:0 2px 2px #d4d7d7; -moz-box-shadow:0 2px 2px #d4d7d7 }
 .aa-list .aa_img_box a { position:relative; z-index:5; }
-.aa-list a .aa_box_hiden { display:block; position:absolute; z-index:6; margin-top:-45px; background-color:#000; color:#fff; height:40px; line-height:40px; margin-left:5px; text-indent:5px; display:none; opacity:.9; filter:alpha(opacity=90); }
+.aa-list a .aa_box_hiden { display:block; position:absolute; z-index:6; margin-top:-45px; background-color:#000; color:#fff; height:40px; line-height:40px; margin-left:5px; text-indent:5px; display:none; opacity:.9; filter:alpha(opacity=90); text-align:center; }
 .aa-list a:hover .aa_box_hiden { display:block; }
-.aa-list a .aa_box_hiden_small { display:block; position:absolute; z-index:6; margin-top:-30px; background-color:#000; color:#fff; height:25px; line-height:25px; margin-left:5px; text-indent:5px; display:none; opacity:.9; filter:alpha(opacity=90); }
+.aa-list a .aa_box_hiden_small { display:none; position:absolute; z-index:6; margin-top:-30px; background-color:#000; color:#fff; height:25px; line-height:25px; margin-left:5px; text-indent:5px; opacity:.9; filter:alpha(opacity=90); text-align:center; }
 .aa-list a:hover .aa_box_hiden_small { display:block; }
 .aa-list a .aa_box_size1 { width:230px; }
 .aa-list a .aa_box_size2 { width:200px; }
