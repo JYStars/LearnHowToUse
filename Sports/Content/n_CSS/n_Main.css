@@ -378,11 +378,12 @@ a:hover.index-backtop { background-position:0 0; }
 .aa-list a .aa_box_size2 { width:200px; }
 .aa-list a .aa_box_size3 { width:230px; }
 .aa-list a .aa_box_size4 { width:250px; }
-.aa-list a .aa_box_size5 { width:120px; }
 .aa-list a .aa_box_size6 { width:182px; }
+.aa-list a .aa_box_l { width:135px; }
+.aa-list a .aa_box_r { width:120px; }
 .aa-list a:hover.aa_box_hiden { display:block; }
-.aa-list .aa_img_smallBox_l { width:127px; float:left; margin-right:6px; }
-.aa-list .aa_img_smallBox_r { width:127px; float:left; }
-.aa-list .aa_img_smallBox_l img,
-.aa-list .aa_img_smallBox_r img { width:117px; padding:5px 0 0 5px; }
+.aa-list .aa_img_smallBox_l { width:135px; float:left; margin-right:5px; }
+.aa-list .aa_img_smallBox_r { width:120px; float:left; }
+.aa-list .aa_img_smallBox_l img { width:125px; padding:5px 0 0 5px; }
+.aa-list .aa_img_smallBox_r img { width:110px; padding:5px 0 0 5px; }
 /* 体育协会End 20140528 */
