@@ -238,6 +238,7 @@
   <ItemGroup>
     <Content Include="Content\Images\icon-common.rar" />
     <Content Include="Content\n_Images\searchinput.mkm" />
+    <Content Include="Desktop.rar" />
     <None Include="Properties\PublishProfiles\Sports.pubxml" />
     <Content Include="Script\plugSlider\fonts\flexslider-icon.eot" />
     <Content Include="Script\plugSlider\fonts\flexslider-icon.ttf" />
