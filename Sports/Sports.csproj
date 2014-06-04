@@ -109,6 +109,7 @@
     <Content Include="Content\Images\triangle.gif" />
     <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\n_CSS\n_Main.css" />
+    <Content Include="Content\n_CSS\pic.v4.css" />
     <Content Include="Content\n_Images\aa_c_1_1_weiqi.jpg" />
     <Content Include="Content\n_Images\aa_c_1_2_wushu.jpg" />
     <Content Include="Content\n_Images\aa_c_2_1_diaoyu.jpg" />
@@ -131,8 +132,10 @@
     <Content Include="Content\n_Images\arrow_down_hover.png" />
     <Content Include="Content\n_Images\arrow_up_down.gif" />
     <Content Include="Content\n_Images\bg.jpg" />
+    <Content Include="Content\n_Images\bntIcon.png" />
     <Content Include="Content\n_Images\btnBook.png" />
     <Content Include="Content\n_Images\comment.gif" />
+    <Content Include="Content\n_Images\contBg.png" />
     <Content Include="Content\n_Images\contestzone_ba.jpg" />
     <Content Include="Content\n_Images\control-btn.png" />
     <Content Include="Content\n_Images\dist_left.png" />
@@ -164,6 +167,19 @@
     <Content Include="Content\n_Images\navbg.jpg" />
     <Content Include="Content\n_Images\nav_arrow.png" />
     <Content Include="Content\n_Images\nav_hover.jpg" />
+    <Content Include="Content\n_Images\nl_01.jpg" />
+    <Content Include="Content\n_Images\nl_02.jpg" />
+    <Content Include="Content\n_Images\nl_03.jpg" />
+    <Content Include="Content\n_Images\nl_04.jpg" />
+    <Content Include="Content\n_Images\nl_05.jpg" />
+    <Content Include="Content\n_Images\nl_06.jpg" />
+    <Content Include="Content\n_Images\nl_07.jpg" />
+    <Content Include="Content\n_Images\nl_08.jpg" />
+    <Content Include="Content\n_Images\nl_09.jpg" />
+    <Content Include="Content\n_Images\nl_10.jpg" />
+    <Content Include="Content\n_Images\nl_11.jpg" />
+    <Content Include="Content\n_Images\nl_12.jpg" />
+    <Content Include="Content\n_Images\png24bg2.png" />
     <Content Include="Content\n_Images\reg-nav.png" />
     <Content Include="Content\n_Images\reg_icons.png" />
     <Content Include="Content\n_Images\search_bg.jpg" />
@@ -176,6 +192,12 @@
     <Content Include="Content\n_Images\tCode.gif" />
     <Content Include="Content\n_Images\ui_star.png" />
     <Content Include="Content\n_Images\ven_map.png" />
+    <Content Include="Content\n_Images\yxjl_01.jpg" />
+    <Content Include="Content\n_Images\yxjl_02.jpg" />
+    <Content Include="Content\n_Images\yxjl_03.jpg" />
+    <Content Include="Content\n_Images\yxjl_04.jpg" />
+    <Content Include="Content\n_Images\yxjl_05.jpg" />
+    <Content Include="Content\n_Images\yxjl_06.jpg" />
     <Content Include="FlagDesign\Content\CSS\Main.css" />
     <Content Include="FlagDesign\Content\Images\banner.jpg" />
     <Content Include="FlagDesign\Content\Images\bg_Body.jpg" />
@@ -214,6 +236,7 @@
     <Content Include="MapSearch.html" />
     <Content Include="n_AA.html" />
     <Content Include="n_ContestsZone.html" />
+    <Content Include="n_ImgNews.html" />
     <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
     <Content Include="n_MapSearch.html" />
@@ -228,6 +251,7 @@
     <Content Include="Script\plugSlider\modernizr.js" />
     <Content Include="Script\jquery-1.11.0.min.js" />
     <Content Include="Script\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="Script\speed_v1.9-min.js" />
     <Content Include="VenueDetail.html" />
     <Content Include="VenueList.html" />
     <Content Include="Web.config" />
@@ -238,7 +262,6 @@
   <ItemGroup>
     <Content Include="Content\Images\icon-common.rar" />
     <Content Include="Content\n_Images\searchinput.mkm" />
-    <Content Include="Desktop.rar" />
     <None Include="Properties\PublishProfiles\Sports.pubxml" />
     <Content Include="Script\plugSlider\fonts\flexslider-icon.eot" />
     <Content Include="Script\plugSlider\fonts\flexslider-icon.ttf" />
