@@ -217,6 +217,7 @@
     <Content Include="n_Index.html" />
     <Content Include="n_Login.html" />
     <Content Include="n_MapSearch.html" />
+    <Content Include="n_NewsList.html" />
     <Content Include="n_Venue.html" />
     <Content Include="n_VenueDetail.html" />
     <Content Include="Register.html" />
