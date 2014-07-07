@@ -134,6 +134,10 @@
     <Content Include="Content\n_Images\bg.jpg" />
     <Content Include="Content\n_Images\bntIcon.png" />
     <Content Include="Content\n_Images\btnBook.png" />
+    <Content Include="Content\n_Images\call_bot1.jpg" />
+    <Content Include="Content\n_Images\coach_j1.jpg" />
+    <Content Include="Content\n_Images\coach_renzheng.gif" />
+    <Content Include="Content\n_Images\coach_tuijian.png" />
     <Content Include="Content\n_Images\comment.gif" />
     <Content Include="Content\n_Images\contBg.png" />
     <Content Include="Content\n_Images\contestzone_ba.jpg" />
@@ -153,6 +157,7 @@
     <Content Include="Content\n_Images\input_icons.png" />
     <Content Include="Content\n_Images\JinL1.jpg" />
     <Content Include="Content\n_Images\leftmenu.png" />
+    <Content Include="Content\n_Images\line_con2.jpg" />
     <Content Include="Content\n_Images\logo.png" />
     <Content Include="Content\n_Images\map1.jpg" />
     <Content Include="Content\n_Images\map_icon.png" />
@@ -179,6 +184,7 @@
     <Content Include="Content\n_Images\nl_10.jpg" />
     <Content Include="Content\n_Images\nl_11.jpg" />
     <Content Include="Content\n_Images\nl_12.jpg" />
+    <Content Include="Content\n_Images\opacity80.png" />
     <Content Include="Content\n_Images\png24bg2.png" />
     <Content Include="Content\n_Images\reg-nav.png" />
     <Content Include="Content\n_Images\reg_icons.png" />
@@ -190,6 +196,7 @@
     <Content Include="Content\n_Images\sym4.jpg" />
     <Content Include="Content\n_Images\tblVenue_td.png" />
     <Content Include="Content\n_Images\tCode.gif" />
+    <Content Include="Content\n_Images\tourlist_bj.gif" />
     <Content Include="Content\n_Images\ui_star.png" />
     <Content Include="Content\n_Images\ven_map.png" />
     <Content Include="Content\n_Images\yxjl_01.jpg" />
@@ -235,6 +242,7 @@
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
     <Content Include="n_AA.html" />
+    <Content Include="n_CoachList.html" />
     <Content Include="n_ContestsZone.html" />
     <Content Include="n_ImgNews.html" />
     <Content Include="n_Index.html" />
