@@ -154,7 +154,7 @@ a:hover { text-decoration: underline; }
 .book-show .book-contain-detail table { border:1px solid #f4f4f4; border-width:0 0 1px 1px }
 .book-show .book-contain-detail table td { border:1px solid #f4f4f4; border-width:1px 1px 0 0; text-align:center; padding:2px 6px }
 .book-now { margin-bottom:10px }
-.book-now a.normal { background: no-repeat; display:block; width:150px; height:40px; margin:15px auto 0; background:url("../n_Images/btnBook.png") top left no-repeat;  -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; color:#fff; font-size:18px; font-weight:bold; text-decoration:none; line-height:40px; text-align:center; text-shadow:1px 1px 0 #333 }
+.book-now a.normal { background: no-repeat; display:block; width:150px; height:40px; margin:15px auto 0; background:url("../n_Images/btnBook.png") top left no-repeat; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; color:#fff; font-size:18px; font-weight:bold; text-decoration:none; line-height:40px; text-align:center; text-shadow:1px 1px 0 #333 }
 .book-now a.normal:hover { background-position:0 -47px; }
 
 .main-box .detail-title { border-bottom:2px solid #46b0ba; }
@@ -471,3 +471,34 @@ a:hover.index-backtop { background-position:0 0; }
 .picLB .today .ftBox .qr{width:173px;}
 .picLB .ftBox .name a{display:block;width:90%;height:100%;}
 /* 图片新闻End 20140606 */
+/* 教练列表Start 20140707 */
+.coach_container li { position:relative; }
+.coach_container li .coachTips { position:absolute; top:10px; width:205px; height:125px; padding:10px; background-color:#000; display:none; color:#fff; font-size:12px; line-height:32px; background:url(../n_Images/opacity80.png) top left; }
+.coach_container li:hover .coachTips { display:block; }
+.coach_container li .coachTips h1 { font-size:18px; }
+.blueCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:blue; }
+.pinkCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#FF3366; }
+.greenCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#009966; }
+.dBlueCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#003399; }
+.dRedCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#CC3333; }
+.coach_sugg { position:absolute; }
+.D_list{ position:relative; margin-bottom: 20px; }
+.D_list .D_call { border: #ccc solid 2px; background-color:#fff; }
+.call_con { padding-left: 10px; padding-top: 10px; }
+.D_call:hover { box-shadow: 0 0 5px #57caf6; -moz-box-shadow: 0 0 5px #57caf6; -webkit-box-shadow: 0 0 5px #57caf6; border: #57caf6 solid 2px; cursor:pointer; }
+.D_call .list_img { background-image: url(../n_Images/tourlist_bj.gif); background-repeat: no-repeat; width: 160px; height: 122px; padding: 5px; float: left; }
+.D_call .list_r { float: left; margin-left: 5px; padding: 5px; width: 770px; }
+.r_con1 { float: left; height: 120px; width: 600px; }
+.r_con1 h2 { display: block; height: 24px; line-height: 24px; overflow: hidden; padding: 4px 0;}
+.r_con1 h2 a { color:#3366CC; cursor:pointer; display:block; float:left; font-family:"微软雅黑"; font-size:16px; font-weight:bold; margin-right:5px; text-decoration:none; }
+.r_con1 p { display: block; float: left; line-height: 25px; width: 580px; color: #999;}
+.r_con1 h2 a span { color: #666666; font-size: 12px; font-weight: normal;}
+.means_box { height: 30px; float: left; width: 350px; margin-top:5px;}
+.r_con2 { background-image: url(../n_Images/line_con2.jpg); background-repeat: no-repeat; float: left; height: 120px; overflow: hidden; width: 150px;}
+.r_con2 .con2_price { color: #FF6600; height: 24px; line-height: 24px; padding: 0 0 6px; text-align: right;}
+.r_con2 .con2_price dfn { color: #FF6600; font-family: Arial; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; }
+.r_con2 .con2_price em { font-family: "Microsoft Yahei"; font-size: 24px; font-style: normal; font-weight: bold; padding: 0 1px;}
+.r_con2 .con2_price i { color: #666666; font-size: 12px; font-style: normal;}
+.call_bot { height: 71px; background-image: url(../n_Images/call_bot1.jpg); background-repeat: no-repeat; background-position:0 0; }
+.call_bot .news { line-height: 20px; margin: 0 0 0 110px; color: #666; padding: 15px 15px 5px 0px; }
+/* 教练列表End 20140707 */

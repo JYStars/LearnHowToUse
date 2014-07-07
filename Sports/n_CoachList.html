@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link charset="utf-8" href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        var ShowCommnets = function () {
+            $("#divPopupLayout").fadeIn("normal");
+        };
+        var HideCommnets = function () {
+            $("#divPopupLayout").fadeOut();
+        };
+    </script>
+</head>
+<body style="background-color: #f4f4f4">
+    <div class="header-wrap">
+        <div class="header div-980 clearfix">
+            <div class="logo float-left">
+                <a href="#">
+                    <img src="Content/n_Images/logo.png" width="133" height="43" alt="" title="" /></a>
+            </div>
+            <div class="search float-right">
+                <input type="text" class="input-search" value="" maxlength="256" /><input type="button" class="btn-search" value="搜 索" />
+            </div>
+        </div>
+    </div>
+    <div class="nav-area">
+        <div class="nav-container">
+            <div class="navbar clearfix">
+                <a href="#" class="current">首页</a>
+                <a href="#">场馆</a>
+                <a href="#">教练</a>
+                <a href="#">活动&赛事</a>
+                <a href="#">健身地图</a>
+            </div>
+            <div class="login-wrap">
+                <ul>
+                    <li><a href="#" onclick="ShowCommnets()">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="control-banner clearfix">
+        <div class="title-wrap float-left">教练筛选</div>
+    </div>
+    <div class="filter div-980">
+        <table class="tblVenue" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>羽毛球</td>
+                <td>瑜 伽</td>
+                <td>滑 雪</td>
+                <td>游 泳</td>
+                <td>台 球</td>
+                <td>舞 蹈</td>
+                <td>网 球</td>
+                <td>乒乓球</td>
+                <td>武 术</td>
+                <td>保龄球</td>
+                <td>篮 球</td>
+                <td>足 球</td>
+                <td>高尔夫</td>
+                <td>击 剑</td>
+                <td>壁 球</td>
+                <td>马 术</td>
+            </tr>
+            <tr>
+                <td>野外活动</td>
+                <td>户外活动</td>
+                <td>皮划艇</td>
+                <td>钓 鱼</td>
+                <td>射 箭</td>
+                <td>自行车</td>
+                <td>摩托车</td>
+                <td>赛 车</td>
+                <td>滑 板</td>
+                <td>轮 滑</td>
+                <td>滑 冰</td>
+                <td>攀 岩</td>
+                <td>围 棋</td>
+                <td>象 棋</td>
+                <td colspan="2" class="current">全部场馆</td>
+            </tr>
+        </table>
+        <div class="dist-left">
+            <div class="dist-wrap dist-title-wrap"><a href="#">热门区域</a>：</div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">中山区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">西岗区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">沙河口区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">甘井子区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">高新园区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">金州区</a></div>
+            <div class="dist-wrap hotdist-wrap"><a href="#">全部区域</a></div>
+        </div>
+    </div>
+    <div class="scroll-area">
+        <h2>推荐教练</h2>
+        <div class="venue-container coach_container">
+            <a class="venue-Lbtn" href="#"></a>
+            <ul>
+                <li>
+                    <div class="coach_sugg">
+                        <img src="Content/n_Images/coach_tuijian.png" /></div>
+                    <a class="img-wrap" href="#">
+                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                        <div class="coachTips">
+                            <h1>刘教练</h1>
+                            羽毛球1对1授课（男）&nbsp;
+                            <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                            <br />
+                            <span class="blueCircleBox">一级教练</span>&nbsp;<span class="pinkCircleBox">省级冠军</span>
+                            <br />
+                            <span class="greenCircleBox">专业</span>&nbsp;<span class="dBlueCircleBox">最受欢迎教练</span>&nbsp;<span class="dRedCircleBox">和蔼可亲</span>
+                        </div>
+                    </a>
+                    <a class="control-bar" href="#">健身会馆</a>
+                </li>
+                <li>
+                    <a class="img-wrap" href="#">
+                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                    </a>
+                    <a class="control-bar" href="#">力健身会馆</a>
+                </li>
+                <li>
+                    <a class="img-wrap" href="#">
+                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                    </a>
+                    <a class="control-bar" href="#">体倍力健身会馆</a>
+                </li>
+                <li>
+                    <a class="img-wrap" href="#">
+                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                    </a>
+                    <a class="control-bar" href="#">中倍力健身会馆</a>
+                </li>
+            </ul>
+            <a class="venue-Rbtn" href="#"></a>
+        </div>
+    </div>
+    <div class="control-banner clearfix boline">
+        <div class="title-wrap float-left">场馆列表</div>
+    </div>
+    <div class="good-area div-980 clearfix">
+        <div class="D_list">
+            <div class="D_call">
+                <div class="call_con clearfix">
+                    <div class="list_img">
+                        <a href="#"><img src="Content/n_Images/coach_j1.jpg" width="150" height="112" /></a>
+                    </div>
+                    <div class="list_r">
+                        <div class="r_con1">
+                            <h2>
+                                <a  href="/8851.html">李明<span>（男）</span></a>
+                                <em class="renz"></em>
+                            </h2>
+                            <div>
+                                <span class="blueCircleBox">一级教练</span>
+                                <span class="dRedCircleBox">省级冠军</span>
+                                <span class="greenCircleBox">一级冠军</span>
+                            </div>
+                            <p>服务周到热情，注重人性化服务，希望用所学知识，结识更多朋友，帮助他们更好的运动，结识更多朋友，结识更多朋友，结识更多朋友</p>
+                        </div>
+                        <div class="r_con2">
+                            <div class="con2_price">
+                                <dfn>¥</dfn><em>300</em><i>/课时</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="call_bot">
+                    <p class="news">
+                        （2014-3-21 15:01:57）hi，大家好，我是一名教练，希望用所学的知识帮助各位学员，达到自己理想的体重，健康标准，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="D_call">
+                <div class="call_con clearfix">
+                    <div class="list_img">
+                        <a href="#"><img src="Content/n_Images/coach_j1.jpg" width="150" height="112" /></a>
+                    </div>
+                    <div class="list_r">
+                        <div class="r_con1">
+                            <h2>
+                                <a  href="/8851.html">李明<span>（男）</span></a>
+                                <em class="renz"></em>
+                            </h2>
+                            <div>
+                                <span class="blueCircleBox">一级教练</span>
+                                <span class="dRedCircleBox">省级冠军</span>
+                            </div>
+                            <p>服务周到热情，注重人性化服务，希望用所学知识，结识更多朋友，帮助他们更好的运动，结识更多朋友，结识更多朋友，结识更多朋友</p>
+                        </div>
+                        <div class="r_con2">
+                            <div class="con2_price">
+                                <dfn>¥</dfn><em>300</em><i>/课时</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="call_bot">
+                    <p class="news">
+                        （2014-3-21 15:01:57）hi，大家好，我是一名教练，希望用所学的知识帮助各位学员，达到自己理想的体重，健康标准，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="D_call">
+                <div class="call_con clearfix">
+                    <div class="list_img">
+                        <a href="#"><img src="Content/n_Images/coach_j1.jpg" width="150" height="112" /></a>
+                    </div>
+                    <div class="list_r">
+                        <div class="r_con1">
+                            <h2>
+                                <a  href="/8851.html">李明<span>（男）</span></a>
+                                <em class="renz"></em>
+                            </h2>
+                            <div>
+                                <span class="blueCircleBox">一级教练</span>
+                                <span class="dRedCircleBox">省级冠军</span>
+                                <span class="greenCircleBox">一级冠军</span>
+                                <span class="dRedCircleBox">省级一级</span>
+                            </div>
+                            <p>服务周到热情，注重人性化服务，希望用所学知识，结识更多朋友，帮助他们更好的运动，结识更多朋友，结识更多朋友，结识更多朋友</p>
+                        </div>
+                        <div class="r_con2">
+                            <div class="con2_price">
+                                <dfn>¥</dfn><em>300</em><i>/课时</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="call_bot">
+                    <p class="news">
+                        （2014-3-21 15:01:57）hi，大家好，我是一名教练，希望用所学的知识帮助各位学员，达到自己理想的体重，健康标准，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="D_call">
+                <div class="call_con clearfix">
+                    <div class="list_img">
+                        <a href="#"><img src="Content/n_Images/coach_j1.jpg" width="150" height="112" /></a>
+                    </div>
+                    <div class="list_r">
+                        <div class="r_con1">
+                            <h2>
+                                <a  href="/8851.html">李明<span>（男）</span></a>
+                                <em class="renz"></em>
+                            </h2>
+                            <div>
+                                <span class="blueCircleBox">一级教练</span>
+                                <span class="dRedCircleBox">省级冠军</span>
+                                <span class="greenCircleBox">一级冠军</span>
+                                <span class="dRedCircleBox">省级一级</span>
+                            </div>
+                            <p>服务周到热情，注重人性化服务，希望用所学知识，结识更多朋友，帮助他们更好的运动，结识更多朋友，结识更多朋友，结识更多朋友</p>
+                        </div>
+                        <div class="r_con2">
+                            <div class="con2_price">
+                                <dfn>¥</dfn><em>300</em><i>/课时</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="call_bot">
+                    <p class="news">
+                        （2014-3-21 15:01:57）hi，大家好，我是一名教练，希望用所学的知识帮助各位学员，达到自己理想的体重，健康标准，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友，结识更多朋友
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more-link-wrap" style="display: block;">
+        <a href="#" class="more-link">
+            <span class="more-tip" id="MoreTip">显示更多教练</span>
+            <span class="ie6-vertical arrow-tip" id="ArrowTip"></span>
+        </a>
+    </div>
+    <div class="footer">
+        <div class="footer-sep"></div>
+        <div class="foot">
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#">关于我们</a></dd>
+                <dd><a href="#">版权声明</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">第一运动</a></dd>
+                <dd><a href="#">第二运动</a></dd>
+            </dl>
+            <dl>
+                <dt>合作伙伴</dt>
+                <dd><a href="#">软降合作</a></dd>
+                <dd><a href="#">战略合作</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="#">公司电话</a></dd>
+                <dd><a href="#">公司地址</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot_b">
+        <div class="foot_b_main">
+            <span class="right">本站所发布的所有内容，未经许可，不得转载</span>
+            <span class="left">© Copyright 2011-2014 Rights Reserved</span>
+        </div>
+    </div>
+    <div class="mode-backtop">
+        <a href="#" class="index-backtop"></a>
+    </div>
+    <div class="sidenav-area" style="display: block; height: 365px;">
+        <div class="sidenav-head"></div>
+        <div class="sidenav-content">
+            <a href="#" class="current sidenav">首页</a>
+            <a href="#" class="sidenav">场馆</a>
+            <a href="#" class="sidenav">教练</a>
+            <a href="#" class="sidenav">活动&赛事</a>
+            <a href="#" class="sidenav">健身地图</a>
+        </div>
+        <div class="sidenav-foot"><a href="#"></a></div>
+    </div>
+    <div id="divPopupLayout" class="popupLayout" style="display: none;">
+        <div class="mask">
+            &nbsp;
+        </div>
+        <div class="layContent" style="width: 500px; height: 300px;">
+            <div class="comments-title">
+                <img src="Content/n_Images/logo.png" width="135px" alt="" />&nbsp; 登陆运动健身网账号
+                <input type="button" class="btnCloseLayout" value="x" onclick="HideCommnets()" />
+            </div>
+            <div class="comments-content">
+                <input type="text" class="txtUserName" placeholder="手机/邮箱/用户名" />
+                <input type="password" class="txtPassWord" />
+                <p class="pass-form-item">
+                    <input type="checkbox" id="cbAutoLogin" checked="checked" />
+                    <label for="cbAutoLogin">下次自动登录</label>
+                </p>
+                <div class="action">
+                    <input type="button" class="submitco" value="立即提交" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
