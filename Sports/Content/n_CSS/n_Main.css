@@ -472,6 +472,11 @@ a:hover.index-backtop { background-position:0 0; }
 .picLB .ftBox .name a{display:block;width:90%;height:100%;}
 /* 图片新闻End 20140606 */
 /* 教练列表Start 20140707 */
+.coach_area { height:205px; }
+.coach_area .coach_container .coach_Lbtn { display:none; position:absolute; z-index:99; top: 60px; width:27px; height:50px; background:url("../n_Images/control-btn.png") 0 0 no-repeat; }
+.coach_area .coach_container:hover .coach_Lbtn { display:block; }
+.coach_area .coach_container .coach_Rbtn { display:none; position:absolute; z-index:99; top:60px; right:0; width:27px; height:50px; background:url("../n_Images/control-btn.png") -56px 0 no-repeat; }
+.coach_area .coach_container:hover .coach_Rbtn { display:block; }
 .coach_container li { position:relative; }
 .coach_container li .coachTips { position:absolute; top:10px; width:205px; height:125px; padding:10px; background-color:#000; display:none; color:#fff; font-size:12px; line-height:32px; background:url(../n_Images/opacity80.png) top left; }
 .coach_container li:hover .coachTips { display:block; }
