@@ -156,6 +156,9 @@
     <Content Include="Content\n_Images\index_img5.jpg" />
     <Content Include="Content\n_Images\input_icons.png" />
     <Content Include="Content\n_Images\JinL1.jpg" />
+    <Content Include="Content\n_Images\jlP1.jpg" />
+    <Content Include="Content\n_Images\jlP2.jpg" />
+    <Content Include="Content\n_Images\jlP3.jpg" />
     <Content Include="Content\n_Images\leftmenu.png" />
     <Content Include="Content\n_Images\line_con2.jpg" />
     <Content Include="Content\n_Images\logo.png" />
@@ -169,6 +172,7 @@
     <Content Include="Content\n_Images\mask5.png" />
     <Content Include="Content\n_Images\menu.gif" />
     <Content Include="Content\n_Images\more_links.png" />
+    <Content Include="Content\n_Images\name_icon.gif" />
     <Content Include="Content\n_Images\navbg.jpg" />
     <Content Include="Content\n_Images\nav_arrow.png" />
     <Content Include="Content\n_Images\nav_hover.jpg" />
@@ -242,6 +246,7 @@
     <Content Include="Login.html" />
     <Content Include="MapSearch.html" />
     <Content Include="n_AA.html" />
+    <Content Include="n_CoachDetail.html" />
     <Content Include="n_CoachList.html" />
     <Content Include="n_ContestsZone.html" />
     <Content Include="n_ImgNews.html" />
