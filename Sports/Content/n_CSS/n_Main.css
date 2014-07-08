@@ -476,11 +476,12 @@ a:hover.index-backtop { background-position:0 0; }
 .coach_container li .coachTips { position:absolute; top:10px; width:205px; height:125px; padding:10px; background-color:#000; display:none; color:#fff; font-size:12px; line-height:32px; background:url(../n_Images/opacity80.png) top left; }
 .coach_container li:hover .coachTips { display:block; }
 .coach_container li .coachTips h1 { font-size:18px; }
-.blueCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:blue; }
-.pinkCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#FF3366; }
-.greenCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#009966; }
-.dBlueCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#003399; }
-.dRedCircleBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#CC3333; }
+.logoColor1CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#02b1af; }
+.logoColor2CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#ca2e92; }
+.logoColor3CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#ee4135; }
+.logoColor4CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#f58026; }
+.logoColor5CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#fdb812; }
+.logoColor6CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#8ec139; }
 .coach_sugg { position:absolute; }
 .D_list{ position:relative; margin-bottom: 20px; }
 .D_list .D_call { border: #ccc solid 2px; background-color:#fff; }
@@ -501,4 +502,5 @@ a:hover.index-backtop { background-position:0 0; }
 .r_con2 .con2_price i { color: #666666; font-size: 12px; font-style: normal;}
 .call_bot { height: 71px; background-image: url(../n_Images/call_bot1.jpg); background-repeat: no-repeat; background-position:0 0; }
 .call_bot .news { line-height: 20px; margin: 0 0 0 110px; color: #666; padding: 15px 15px 5px 0px; }
+.renz { background:url(../n_Images/coach_renzheng.gif) 0 0 no-repeat; display: block; float: left; height: 17px; width: 49px; margin-top:3px }
 /* 教练列表End 20140707 */
