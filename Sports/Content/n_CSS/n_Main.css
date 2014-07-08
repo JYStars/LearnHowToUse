@@ -509,3 +509,14 @@ a:hover.index-backtop { background-position:0 0; }
 .call_bot .news { line-height: 20px; margin: 0 0 0 110px; color: #666; padding: 15px 15px 5px 0px; }
 .renz { background:url(../n_Images/coach_renzheng.gif) 0 0 no-repeat; display: block; float: left; height: 17px; width: 49px; margin-top:3px }
 /* 教练列表End 20140707 */
+/* 教练详细Start 20140708 */
+.jl_container { background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 15px; position:relative; border:1px solid #e5e5e5 }
+.jl_container .jl_PerPhoto { width:580px; padding:4px; border:1px solid #e1e1e1; height:310px }
+.jl_container .jl_PerInfo { width:325px; background-color:#EAF4FE; padding:20px 5px 20px 15px; line-height:30px; height:280px; }
+.jl_container .jl_PerInfo .jl_Name { color:#000; font-size:18px; }
+.jl_container .jl_PerInfo .jl_Price { color:#0b99ef; }
+.jl_container .jl_PerInfo .jl_UnRenz { color:#f58026; }
+.jl_container .jl_PerInfo .jl_xiangmu { background:url(../n_Images/name_icon.gif) 0 6px no-repeat; padding-left:20px; font-size:13px; }
+.jl_container .jl_PerInfo .splitBotLine { border-bottom:1px dashed #CADFF2; padding-bottom:10px; }
+.jl_container .jl_PerInfo .splitTopLine { border-top:1px dashed #fff; padding-top:10px; }
+/* 教练详细End 20140708 */
