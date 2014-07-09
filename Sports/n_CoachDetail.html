@@ -3,9 +3,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="Script/plugSlider/flexslider.css" rel="stylesheet" />
     <link href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
-    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
-    <script language="javascript" type="text/javascript">
+    <script type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/modernizr.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            });
+        });
         var ShowPitchTabs = function (id, slt) {
             $("#coach_Ger").css("display", "none");
             $("#coach_Jis").css("display", "none");
@@ -14,7 +24,7 @@
             $("#li_Ger").removeClass("coach_Onselected").addClass("coach_Onhold");
             $("#li_Jis").removeClass("coach_Onselected").addClass("coach_Onhold");
             $("#li_Wot").removeClass("coach_Onselected").addClass("coach_Onhold");
-            $(slt).parent().addClass("coach_Onselected").removeClass("coach_Onhold");
+            $(slt).addClass("coach_Onselected").removeClass("coach_Onhold");
         };
     </script>
 </head>
@@ -50,7 +60,22 @@
     <div class="div-980 detail-content">
         <div class="jl_container clearfix">
             <div class="jl_PerPhoto float-left">
-                <img src="Content/n_Images/jlP1.jpg" width="580px" height="310px" alt="" />
+                <div class="jl_Flexsilider flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="Content/n_Images/jlP1.jpg" width="580px" height="310px" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/jlP2.jpg" width="580px" height="310px" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/jlP3.jpg" width="580px" height="310px" class="ps" />
+                        </li>
+                        <li>
+                            <img src="Content/n_Images/jlP4.jpg" width="580px" height="310px" class="ps" />
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="jl_PerInfo float-right">
                 <div class="splitBotLine">
@@ -76,35 +101,65 @@
             </div>
         </div>
         <br />
-        <div class="jl_container clearfix">
+        <div class="clearfix">
             <div class="jl_3Tabs float-left">
                 <ul class="clearfix">
                     <li class="coach_firTab">&nbsp;</li>
-                    <li id="li_Ger" class="coach_Onselected"><a href="#" onclick="ShowPitchTabs('coach_Ger', this)">个人信息</a></li>
-                    <li id="li_Jis" class="coach_Onhold"><a href="#" onclick="ShowPitchTabs('coach_Jis', this)">健身经验</a></li>
-                    <li id="li_Wot" class="coach_Onhold"><a href="#" onclick="ShowPitchTabs('coach_Wot', this)">我推荐的装备</a></li>
+                    <li id="li_Ger" class="coach_Onselected" onclick="ShowPitchTabs('coach_Ger', this)">个人信息</li>
+                    <li id="li_Jis" class="coach_Onhold" onclick="ShowPitchTabs('coach_Jis', this)">健身经验</li>
+                    <li id="li_Wot" class="coach_Onhold" onclick="ShowPitchTabs('coach_Wot', this)">我推荐的装备</li>
                     <li class="coach_lasTab">&nbsp;</li>
                 </ul>
-                <div id="coach_Ger">
-                    个人信息
+                <div id="coach_Ger" class="jl_Tabs">
+                    <h2>自我介绍</h2>
+                    <div>
+                        本人是 国家2级运动员， 沈阳体育大学学生
+                    </div>
+                    <br />
+                    <h2>详细资料</h2>
+                    <div>
+                        曾获得2010辽宁省青少年羽毛球冠军。动作标准，有两年的教球经验，对学员有耐心，对每个学员有不同的教球方式。可以让你的球技有很大提高。球馆是新场地，环境特别好，价格合理。
+                    </div>
                 </div>
-                <div id="coach_Jis" style="display:none">
-                    健身经验
+                <div id="coach_Jis" class="jl_Tabs" style="display:none">
+                    <ol class="jl_Jisol">
+                        <li>如果你特别想在短时间内疯狂的掉体重，那么请少吃饭、少喝水，再吃减肥药以及疯狂的高强度有氧训练，不过这样就不知道你的身体能不能吃的消，能不能坚持！用这种方法减体重的朋友请三思！</li>
+                        <li>体重增加5斤可能需要一个月的时间，甚至更短时间，而肌肉增加5斤可能需要1年的时间，甚至更长时间。 体重减少5斤可能只需要10天时间，甚至更短时间，而脂肪减掉5斤可能需要1个月的时间，甚至更长时间。 所以健身的朋友们，不论你是减肥还是增肌，请不要太在意你的体重，你应该在意你的肌肉和脂肪。</li>
+                        <li>男人多做力量训练会导致你的女人越来越依赖你，女人多做力量训练会导致你的男人越来越怕你。如果男人和女人都做力量训练，那后果就“不堪设想”！</li>
+                        <li>健身说白了就一个字“练”，你练就有可能超越，你不练，你就一定不会超越。记住，坚持练才是王道。</li>
+                        <li>健身不论你是减肥还是增肌，请多练腿。腿部肌肉不仅可以帮助你维持身体的肌肉，同样也可以帮助你消耗更多的热量。</li>
+                        <li>健身减肥的朋友们请注意，减脂期间请远离配料里含有"白砂糖"的饮料，它们是你减肥最大，也是最恐怖的隐形杀手。</li>
+                        <li>蛋白质的作用除了修复身体各个组织器官外，还有一个重要作用就是为身体提供能量。因此，练肌肉的朋友们需要注意，你需要摄入足够的碳水化和物给身体补充能量，要不然你的身体就会分解你的肌肉来给身体提供能量。</li>
+                        <li>健身的男人和女人们：“健身锻炼不会让肌肉转化成脂肪，也不会让脂肪转化成肌肉，体重轻了不一定是瘦了，体重增加了，不一定是胖了”。</li>
+                    </ol>
                 </div>
-                <div id="coach_Wot" style="display:none">
-                    我推荐的装备
+                <div id="coach_Wot" class="jl_Tabs" style="display:none">
+                    <ol class="jl_Wotol">
+                        <li>
+                            <h3>草根中的英雄”——锐彪F4羽毛球拍</h3>
+                            锐彪选择了一条区别于高端羽拍的不寻常路，坚走低端路线，打造一身独特的小户人家的聚敛、俊秀气质。从性价比来说，花费99元入手一支全碳素羽拍，对于初学者来说是最佳的选择。
+                        </li>
+                        <li>
+                            <h3>初学者必备:2012年胜利VICTOR公司新款羽毛球拍ART-9600</h3>
+                            此款羽拍中杆偏硬，拍头稍重，能在击球瞬间释放出极大的反弹力量，并迅速转化为极强的自身爆发力，使攻其不备，轻松扣杀成为可能。低调的高级灰是ART-9600的主色，优雅大气，黄色点缀更是画龙点睛一笔，ART-9600是一支不可多得的入门级好拍！
+                        </li>
+                        <li>
+                            <h3>李宁羽毛球拍HC1100A(初级控球型)</h3>
+                            李宁 HC1100A 羽毛球拍，采高刚性碳纤维制作的球拍适合刚入门的初学者，采用高刚性碳纤维、波浪形线凹糟、力学优化拍框系统等技术。采用刚性碳纤维材质，轻量化、高强度、易于熟练操控。碳纤维拍框使球拍的重量大大减轻，同时又保证了较高的强度和刚性。此材料制作的球拍，更适于入门级选手，轻易掌握球拍外框采用波浪形设计使球线与球拍之间的摩擦得到缓解，减少球拍对线的磨损，延长球线的使用寿命。在极速的攻防变换中，特别经过力学优化的球拍，成为你的信心之源。除了将甜区面积在方形拍框基础上，进一步增大，更着力令甜区向上发展，从而提高了球拍击球点。面对凌厉扣球，扩大有效防守面积；抓住瞬息机会，发挥极限扣杀力量。
+                        </li>
+                    </ol>
                 </div>
             </div>
             <div class="jl_GerPrefer float-right">
-                <div>他喜欢什么</div>
+                <div class="jl_GerPreferTitle">他喜欢什么</div>
                 <!--Hello 哥们，写这里时top left数字随机生成，但是要保证top不能超过260，Left不能超过280-->
-                <!--如果你非要超过top和Left限制的宽度，去修改jl_GerPrefer的宽度和高度即可-->
+                <!--如果你非要超过top和Left限制的宽度，去修改jl_flyArea的宽度和高度即可-->
                 <div class="jl_flyArea">
-                    <div class="jl_GerPreferItem" style="top:10px; left:30px">123123123</div>
-                    <div class="jl_GerPreferItem" style="top:30px; left:80px">123123123</div>
-                    <div class="jl_GerPreferItem" style="top:60px; left:160px">123123123</div>
-                    <div class="jl_GerPreferItem" style="top:100px; left:60px">123123123</div>
-                    <div class="jl_GerPreferItem" style="top:145px; left:265px">123123123</div>
+                    <div class="jl_GerPreferItem logoColor1CirBox" style="top:200px; left:30px">123123</div>
+                    <div class="jl_GerPreferItem logoColor2CirBox" style="top:35px; left:80px">123123</div>
+                    <div class="jl_GerPreferItem logoColor3CirBox" style="top:60px; left:160px">123123</div>
+                    <div class="jl_GerPreferItem logoColor4CirBox" style="top:100px; left:60px">123123</div>
+                    <div class="jl_GerPreferItem logoColor5CirBox" style="top:145px; left:200px">123123</div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 ﻿body, p, dl, dd, table, td, th, input, img, form, div, ul, li, h1, h2, h3, h4, h5, h6, blockquote { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
-ol, ul { list-style: none; }
+ol, ul { list-style: none; margin:0; padding:0 }
 .red { color:#ff0000; }
 input, textarea, select, button { font-size: 100%; font-family: inherit; }
 img, iframe { border: 0; text-decoration: none; }
@@ -511,7 +511,9 @@ a:hover.index-backtop { background-position:0 0; }
 /* 教练列表End 20140707 */
 /* 教练详细Start 20140708 */
 .jl_container { background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 15px; position:relative; border:1px solid #e5e5e5 }
-.jl_container .jl_PerPhoto { width:580px; padding:4px; border:1px solid #e1e1e1; height:310px }
+.jl_container .jl_PerPhoto { width:585px; height:310px }
+.jl_container .jl_PerPhoto .jl_Flexsilider { margin:0; padding-bottom:0; overflow:hidden }
+.jl_container .jl_PerPhoto .flex-control-nav { bottom:10px!important;}
 .jl_container .jl_PerInfo { width:325px; background-color:#EAF4FE; padding:20px 5px 20px 15px; line-height:30px; height:280px; }
 .jl_container .jl_PerInfo .jl_Name { color:#000; font-size:18px; }
 .jl_container .jl_PerInfo .jl_Price { color:#0b99ef; }
@@ -519,14 +521,22 @@ a:hover.index-backtop { background-position:0 0; }
 .jl_container .jl_PerInfo .jl_xiangmu { background:url(../n_Images/name_icon.gif) 0 6px no-repeat; padding-left:20px; font-size:13px; }
 .jl_container .jl_PerInfo .splitBotLine { border-bottom:1px dashed #CADFF2; padding-bottom:10px; }
 .jl_container .jl_PerInfo .splitTopLine { border-top:1px dashed #fff; padding-top:10px; }
-.jl_container .jl_3Tabs { width:580px; padding:0 15px }
-.jl_container .jl_3Tabs ul { border:0 }
-.jl_container .jl_3Tabs ul li { list-style-type:none; border:1px solid #e5e5e5; border-width:0 1px 1px 0; float:left; padding:6px 6px 4px; text-align:center }
-.jl_container .jl_3Tabs .coach_firTab { width:10px }
-.jl_container .jl_3Tabs .coach_Onselected { width:100px; border-width:1px 1px 0px 0 }
-.jl_container .jl_3Tabs .coach_Onhold { width:100px; border-width:1px 1px 1px 0 }
-.jl_container .jl_3Tabs .coach_lasTab { width:200px; border-right-width:0 }
-.jl_container .jl_GerPrefer { width:325px; padding:10px 5px 10px 5px; height:300px; }
-.jl_container .jl_GerPrefer .jl_flyArea { position:relative }
-.jl_container .jl_GerPrefer .jl_GerPreferItem { position:absolute }
+
+.jl_3Tabs { width:580px; background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 12px; position:relative; border:1px solid #e5e5e5 }
+.jl_3Tabs ul { border:0 }
+.jl_3Tabs ul li { list-style-type:none; border:1px solid #e5e5e5; border-width:0 1px 1px 0; float:left; padding:6px 6px 4px; text-align:center }
+.jl_3Tabs .coach_firTab { width:10px }
+.jl_3Tabs .coach_Onselected { width:100px; border-width:1px 1px 0px 0; cursor:pointer; color:#0B99EF; font-weight:bold }
+.jl_3Tabs .coach_Onhold { width:100px; border-width:1px 1px 1px 0; cursor:pointer}
+.jl_3Tabs .coach_lasTab { width:200px; border-right-width:0 }
+.jl_Tabs { padding:20px 5px; min-height:400px; line-height:30px; }
+.jl_Tabs h2 { border-bottom:1px solid #e5e5e5; font-size:14px; font-weight:bold; color:#255fb1 }
+.jl_Tabs .jl_Jisol,
+.jl_Tabs .jl_Wotol { list-style-type:decimal; list-style-position:outside; padding-left:15px; }
+.jl_Tabs .jl_Wotol h3 { font-weight:bold }
+
+.jl_GerPrefer { width:325px; padding:10px 17px; height:310px; background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; position:relative; border:1px solid #e5e5e5 }
+.jl_GerPrefer .jl_GerPreferTitle { border-bottom:1px solid #e5e5e5; color:#f58026; font-weight:bold; font-size:16px; padding:7px }
+.jl_GerPrefer .jl_flyArea { position:relative; overflow:hidden; width:320px; height:270px }
+.jl_GerPrefer .jl_GerPreferItem { position:absolute }
 /* 教练详细End 20140708 */
