@@ -4,6 +4,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        var ShowPitchTabs = function (id, slt) {
+            $("#coach_Ger").css("display", "none");
+            $("#coach_Jis").css("display", "none");
+            $("#coach_Wot").css("display", "none");
+            $("#" + id).css("display", "");
+            $("#li_Ger").removeClass("coach_Onselected").addClass("coach_Onhold");
+            $("#li_Jis").removeClass("coach_Onselected").addClass("coach_Onhold");
+            $("#li_Wot").removeClass("coach_Onselected").addClass("coach_Onhold");
+            $(slt).parent().addClass("coach_Onselected").removeClass("coach_Onhold");
+        };
+    </script>
 </head>
 <body style="background-color: #f4f4f4">
     <div class="header-wrap">
@@ -63,7 +76,38 @@
             </div>
         </div>
         <br />
-        <div class="jl_container clearfix">222</div>
+        <div class="jl_container clearfix">
+            <div class="jl_3Tabs float-left">
+                <ul class="clearfix">
+                    <li class="coach_firTab">&nbsp;</li>
+                    <li id="li_Ger" class="coach_Onselected"><a href="#" onclick="ShowPitchTabs('coach_Ger', this)">个人信息</a></li>
+                    <li id="li_Jis" class="coach_Onhold"><a href="#" onclick="ShowPitchTabs('coach_Jis', this)">健身经验</a></li>
+                    <li id="li_Wot" class="coach_Onhold"><a href="#" onclick="ShowPitchTabs('coach_Wot', this)">我推荐的装备</a></li>
+                    <li class="coach_lasTab">&nbsp;</li>
+                </ul>
+                <div id="coach_Ger">
+                    个人信息
+                </div>
+                <div id="coach_Jis" style="display:none">
+                    健身经验
+                </div>
+                <div id="coach_Wot" style="display:none">
+                    我推荐的装备
+                </div>
+            </div>
+            <div class="jl_GerPrefer float-right">
+                <div>他喜欢什么</div>
+                <!--Hello 哥们，写这里时top left数字随机生成，但是要保证top不能超过260，Left不能超过280-->
+                <!--如果你非要超过top和Left限制的宽度，去修改jl_GerPrefer的宽度和高度即可-->
+                <div class="jl_flyArea">
+                    <div class="jl_GerPreferItem" style="top:10px; left:30px">123123123</div>
+                    <div class="jl_GerPreferItem" style="top:30px; left:80px">123123123</div>
+                    <div class="jl_GerPreferItem" style="top:60px; left:160px">123123123</div>
+                    <div class="jl_GerPreferItem" style="top:100px; left:60px">123123123</div>
+                    <div class="jl_GerPreferItem" style="top:145px; left:265px">123123123</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer-sep"></div>
