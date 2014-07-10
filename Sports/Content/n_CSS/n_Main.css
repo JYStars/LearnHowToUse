@@ -514,13 +514,14 @@ a:hover.index-backtop { background-position:0 0; }
 .jl_container .jl_PerPhoto { width:585px; height:310px }
 .jl_container .jl_PerPhoto .jl_Flexsilider { margin:0; padding-bottom:0; overflow:hidden }
 .jl_container .jl_PerPhoto .flex-control-nav { bottom:10px!important;}
-.jl_container .jl_PerInfo { width:325px; background-color:#EAF4FE; padding:20px 5px 20px 15px; line-height:30px; height:280px; }
+.jl_container .jl_PerInfo { width:325px; background-color:#EAF4FE; padding:10px 10px 10px 15px; line-height:30px; }
 .jl_container .jl_PerInfo .jl_Name { color:#000; font-size:18px; }
 .jl_container .jl_PerInfo .jl_Price { color:#0b99ef; }
 .jl_container .jl_PerInfo .jl_UnRenz { color:#f58026; }
 .jl_container .jl_PerInfo .jl_xiangmu { background:url(../n_Images/name_icon.gif) 0 6px no-repeat; padding-left:20px; font-size:13px; }
-.jl_container .jl_PerInfo .splitBotLine { border-bottom:1px dashed #CADFF2; padding-bottom:10px; }
-.jl_container .jl_PerInfo .splitTopLine { border-top:1px dashed #fff; padding-top:10px; }
+.jl_container .jl_PerInfo .splitBotLine { border-bottom:1px dashed #CADFF2; padding-bottom:5px; }
+.jl_container .jl_PerInfo .splitBotLine img { background-color:#FFF; padding:1px; }
+.jl_container .jl_PerInfo .splitTopLine { border-top:1px dashed #fff; padding-top:5px; }
 
 .jl_3Tabs { width:580px; background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 12px; position:relative; border:1px solid #e5e5e5 }
 .jl_3Tabs ul { border:0 }
@@ -529,7 +530,7 @@ a:hover.index-backtop { background-position:0 0; }
 .jl_3Tabs .coach_Onselected { width:100px; border-width:1px 1px 0px 0; cursor:pointer; color:#0B99EF; font-weight:bold }
 .jl_3Tabs .coach_Onhold { width:100px; border-width:1px 1px 1px 0; cursor:pointer}
 .jl_3Tabs .coach_lasTab { width:200px; border-right-width:0 }
-.jl_Tabs { padding:20px 5px; min-height:400px; line-height:30px; }
+.jl_Tabs { padding:20px 5px; min-height:223px; line-height:30px; }
 .jl_Tabs h2 { border-bottom:1px solid #e5e5e5; font-size:14px; font-weight:bold; color:#255fb1 }
 .jl_Tabs .jl_Jisol,
 .jl_Tabs .jl_Wotol { list-style-type:decimal; list-style-position:outside; padding-left:15px; }
