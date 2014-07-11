@@ -521,6 +521,7 @@ a:hover.index-backtop { background-position:0 0; }
 .jl_container .jl_PerInfo .jl_xiangmu { background:url(../n_Images/name_icon.gif) 0 6px no-repeat; padding-left:20px; font-size:13px; }
 .jl_container .jl_PerInfo .splitBotLine { border-bottom:1px dashed #CADFF2; padding-bottom:5px; }
 .jl_container .jl_PerInfo .splitBotLine img { background-color:#FFF; padding:1px; }
+.jl_container .jl_PerInfo .splitBotLine .jl_Name img { background-color:transparent; padding:0px; }
 .jl_container .jl_PerInfo .splitTopLine { border-top:1px dashed #fff; padding-top:5px; }
 
 .jl_3Tabs { width:580px; background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 12px; position:relative; border:1px solid #e5e5e5 }
