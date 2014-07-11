@@ -160,6 +160,8 @@
     <Content Include="Content\n_Images\jlP2.jpg" />
     <Content Include="Content\n_Images\jlP3.jpg" />
     <Content Include="Content\n_Images\jlP4.jpg" />
+    <Content Include="Content\n_Images\jl_Man.gif" />
+    <Content Include="Content\n_Images\jl_Women.gif" />
     <Content Include="Content\n_Images\leftmenu.png" />
     <Content Include="Content\n_Images\line_con2.jpg" />
     <Content Include="Content\n_Images\logo.png" />
