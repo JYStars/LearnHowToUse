@@ -478,8 +478,9 @@ a:hover.index-backtop { background-position:0 0; }
 .coach_area .coach_container .coach_Rbtn { display:none; position:absolute; z-index:99; top:60px; right:0; width:27px; height:50px; background:url("../n_Images/control-btn.png") -56px 0 no-repeat; }
 .coach_area .coach_container:hover .coach_Rbtn { display:block; }
 .coach_container li { position:relative; }
-.coach_container li .coachTips { position:absolute; top:10px; width:205px; height:125px; padding:10px; background-color:#000; display:none; color:#fff; font-size:12px; line-height:32px; background:url(../n_Images/opacity80.png) top left; }
-.coach_container li:hover .coachTips { display:block; }
+.coach_container li a { display:block; float:left; margin-right:20px }
+.coach_container li a .coachTips { position:absolute; top:0px; width:205px; height:125px; padding:10px; background-color:#000; display:none; color:#fff; font-size:12px; line-height:32px; background:url(../n_Images/opacity80.png) top left; }
+.coach_container li a:hover .coachTips { display:block; }
 .coach_container li .coachTips h1 { font-size:18px; }
 .logoColor1CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#02b1af; }
 .logoColor2CirBox { color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; padding:2px 8px 3px; border:1px solid #fff; background-color:#ca2e92; }
@@ -508,6 +509,14 @@ a:hover.index-backtop { background-position:0 0; }
 .call_bot { height: 71px; background-image: url(../n_Images/call_bot1.jpg); background-repeat: no-repeat; background-position:0 0; }
 .call_bot .news { line-height: 20px; margin: 0 0 0 110px; color: #666; padding: 15px 15px 5px 0px; }
 .renz { background:url(../n_Images/coach_renzheng.gif) 0 0 no-repeat; display: block; float: left; height: 17px; width: 49px; margin-top:3px }
+#venue_ShowList { margin:0; padding-bottom:0; overflow:hidden; height:160px }
+#venue_ShowList .slides { padding:10px; }
+#venue_ShowList .slides li { padding:0!important; }
+#venue_ShowList .flex-direction-nav { position:absolute; margin:-150px 0 0 -8px; width:985px; height:30px; }
+#venue_ShowList .flex-direction-nav li:first-child { float:left!important; width:15px!important; }
+#venue_ShowList .flex-direction-nav li:last-child { float:right!important; width:15px!important; }
+#venue_ShowList .flex-direction-nav li a.flex-prev { display:block; width:27px; height:50px; background:url("../n_Images/control-btn.png") 0 0 no-repeat; text-indent:-100px; }
+#venue_ShowList .flex-direction-nav li a.flex-next { display:block; width:27px; height:50px; background:url("../n_Images/control-btn.png") -56px 0 no-repeat; text-indent:100px; }
 /* 教练列表End 20140707 */
 /* 教练详细Start 20140708 */
 .jl_container { background:#fff; font-family:"\5FAE\8F6F\96C5\9ED1",SimHei; padding:20px 15px; position:relative; border:1px solid #e5e5e5 }

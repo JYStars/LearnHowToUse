@@ -3,9 +3,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link charset="utf-8" href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
-    <script language="javascript" type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
-    <script language="javascript" type="text/javascript">
+    <link href="Content/n_CSS/n_Main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Script/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="Script/plugSlider/modernizr.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).load(function () {
+                $('#venue_ShowList').flexslider({
+                    animation: "slide"
+                });
+            });
+        });
         var ShowCommnets = function () {
             $("#divPopupLayout").fadeIn("normal");
         };
@@ -98,40 +107,165 @@
     <div class="scroll-area coach_area">
         <h2>推荐教练</h2>
         <div class="venue-container coach_container">
-            <a class="coach_Lbtn" href="#"></a>
-            <ul>
-                <li>
-                    <div class="coach_sugg"><img src="Content/n_Images/coach_tuijian.png" title="" alt="" /></div>
-                    <a class="img-wrap" href="#">
-                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
-                        <div class="coachTips">
-                            <h1>刘教练</h1>
-                            羽毛球1对1授课（男）&nbsp;
-                            <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
-                            <br />
-                            <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
-                            <br />
-                            <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="img-wrap" href="#">
-                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a class="img-wrap" href="#">
-                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a class="img-wrap" href="#">
-                        <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
-                    </a>
-                </li>
-            </ul>
-            <a class="coach_Rbtn" href="#"></a>
+            <!--<a class="coach_Lbtn" href="#"></a>-->
+            <div id="venue_ShowList">
+                <ul class="slides">
+                    <li>
+                        <div class="coach_sugg"><img src="Content/n_Images/coach_tuijian.png" title="" alt="" /></div>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="coach_sugg"><img src="Content/n_Images/coach_tuijian.png" title="" alt="" /></div>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="coach_sugg"><img src="Content/n_Images/coach_tuijian.png" title="" alt="" /></div>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                        <a class="img-wrap" href="#">
+                            <img class="img-recommend-pic" src="Content/n_Images/gym-one.jpg" width="225px" height="145px" alt="" />
+                            <div class="coachTips">
+                                <h1>刘教练</h1>
+                                羽毛球1对1授课（男）&nbsp;
+                                <img src="Content/n_Images/coach_renzheng.gif" width="47px" />
+                                <br />
+                                <span class="logoColor1CirBox">一级教练</span>&nbsp;<span class="logoColor2CirBox">省级冠军</span>
+                                <br />
+                                <span class="logoColor3CirBox">专业</span>&nbsp;<span class="logoColor4CirBox">最受欢迎教练</span>&nbsp;<span class="logoColor5CirBox">和蔼可亲</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--<a class="coach_Rbtn" href="#"></a>-->
         </div>
     </div>
     <div class="control-banner clearfix boline">
